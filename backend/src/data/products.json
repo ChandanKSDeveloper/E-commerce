@@ -1,0 +1,3802 @@
+[
+  {
+    "name": "bajaj compact product 1",
+    "description": "This is a compact electronics product specially curated for the Indian market.",
+    "price": 6171.82,
+    "stock": 29,
+    "rating": 3.9,
+    "image": [
+      {
+        "public_id": "product_1",
+        "url": "https://picsum.photos/seed/indianproduct1/500/500"
+      }
+    ],
+    "category": "Electronics",
+    "seller": "bajaj",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805448",
+    "updatedAt": "2026-03-04T17:52:42.805455"
+  },
+  {
+    "name": "samsung india compact product 2",
+    "description": "This is a compact mobile phones product specially curated for the Indian market.",
+    "price": 41088.12,
+    "stock": 117,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_2",
+        "url": "https://picsum.photos/seed/indianproduct2/500/500"
+      }
+    ],
+    "category": "Mobile Phones",
+    "seller": "samsung india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805467",
+    "updatedAt": "2026-03-04T17:52:42.805468"
+  },
+  {
+    "name": "khadi india durable product 3",
+    "description": "This is a durable computers & tablets product specially curated for the Indian market.",
+    "price": 46351.85,
+    "stock": 22,
+    "rating": 3.8,
+    "image": [
+      {
+        "public_id": "product_3",
+        "url": "https://picsum.photos/seed/indianproduct3/500/500"
+      }
+    ],
+    "category": "Computers & Tablets",
+    "seller": "khadi india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805479",
+    "updatedAt": "2026-03-04T17:52:42.805480"
+  },
+  {
+    "name": "wildcraft premium product 4",
+    "description": "This is a premium cameras product specially curated for the Indian market.",
+    "price": 92803.11,
+    "stock": 21,
+    "rating": 3.9,
+    "image": [
+      {
+        "public_id": "product_4",
+        "url": "https://picsum.photos/seed/indianproduct4/500/500"
+      }
+    ],
+    "category": "Cameras",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805489",
+    "updatedAt": "2026-03-04T17:52:42.805491"
+  },
+  {
+    "name": "khadi india wireless product 5",
+    "description": "This is a wireless audio & headphones product specially curated for the Indian market.",
+    "price": 29375.69,
+    "stock": 99,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_5",
+        "url": "https://picsum.photos/seed/indianproduct5/500/500"
+      }
+    ],
+    "category": "Audio & Headphones",
+    "seller": "khadi india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805498",
+    "updatedAt": "2026-03-04T17:52:42.805500"
+  },
+  {
+    "name": "khadi india compact product 6",
+    "description": "This is a compact wearable technology product specially curated for the Indian market.",
+    "price": 32259.06,
+    "stock": 66,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_6",
+        "url": "https://picsum.photos/seed/indianproduct6/500/500"
+      }
+    ],
+    "category": "Wearable Technology",
+    "seller": "khadi india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805508",
+    "updatedAt": "2026-03-04T17:52:42.805509"
+  },
+  {
+    "name": "fabindia classic product 7",
+    "description": "This is a classic video games & consoles product specially curated for the Indian market.",
+    "price": 57718.42,
+    "stock": 60,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_7",
+        "url": "https://picsum.photos/seed/indianproduct7/500/500"
+      }
+    ],
+    "category": "Video Games & Consoles",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805518",
+    "updatedAt": "2026-03-04T17:52:42.805519"
+  },
+  {
+    "name": "hero smart product 8",
+    "description": "This is a smart clothing product specially curated for the Indian market.",
+    "price": 51749.13,
+    "stock": 6,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_8",
+        "url": "https://picsum.photos/seed/indianproduct8/500/500"
+      }
+    ],
+    "category": "Clothing",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805542",
+    "updatedAt": "2026-03-04T17:52:42.805544"
+  },
+  {
+    "name": "mahindra durable product 9",
+    "description": "This is a durable men's fashion product specially curated for the Indian market.",
+    "price": 41343.0,
+    "stock": 152,
+    "rating": 3.5,
+    "image": [
+      {
+        "public_id": "product_9",
+        "url": "https://picsum.photos/seed/indianproduct9/500/500"
+      }
+    ],
+    "category": "Men's Fashion",
+    "seller": "mahindra",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805553",
+    "updatedAt": "2026-03-04T17:52:42.805555"
+  },
+  {
+    "name": "fabindia budget product 10",
+    "description": "This is a budget women's fashion product specially curated for the Indian market.",
+    "price": 80630.94,
+    "stock": 30,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_10",
+        "url": "https://picsum.photos/seed/indianproduct10/500/500"
+      }
+    ],
+    "category": "Women's Fashion",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805562",
+    "updatedAt": "2026-03-04T17:52:42.805564"
+  },
+  {
+    "name": "mahindra classic product 11",
+    "description": "This is a classic kids' fashion product specially curated for the Indian market.",
+    "price": 33594.6,
+    "stock": 59,
+    "rating": 3.8,
+    "image": [
+      {
+        "public_id": "product_11",
+        "url": "https://picsum.photos/seed/indianproduct11/500/500"
+      }
+    ],
+    "category": "Kids' Fashion",
+    "seller": "mahindra",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805571",
+    "updatedAt": "2026-03-04T17:52:42.805572"
+  },
+  {
+    "name": "patanjali budget product 12",
+    "description": "This is a budget footwear product specially curated for the Indian market.",
+    "price": 59081.26,
+    "stock": 93,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_12",
+        "url": "https://picsum.photos/seed/indianproduct12/500/500"
+      }
+    ],
+    "category": "Footwear",
+    "seller": "patanjali",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805579",
+    "updatedAt": "2026-03-04T17:52:42.805581"
+  },
+  {
+    "name": "reliance smart product 13",
+    "description": "This is a smart accessories product specially curated for the Indian market.",
+    "price": 38538.03,
+    "stock": 121,
+    "rating": 4.3,
+    "image": [
+      {
+        "public_id": "product_13",
+        "url": "https://picsum.photos/seed/indianproduct13/500/500"
+      }
+    ],
+    "category": "Accessories",
+    "seller": "reliance",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805587",
+    "updatedAt": "2026-03-04T17:52:42.805589"
+  },
+  {
+    "name": "patanjali eco product 14",
+    "description": "This is a eco jewelry product specially curated for the Indian market.",
+    "price": 13135.73,
+    "stock": 176,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_14",
+        "url": "https://picsum.photos/seed/indianproduct14/500/500"
+      }
+    ],
+    "category": "Jewelry",
+    "seller": "patanjali",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805598",
+    "updatedAt": "2026-03-04T17:52:42.805599"
+  },
+  {
+    "name": "hero premium product 15",
+    "description": "This is a premium home & kitchen product specially curated for the Indian market.",
+    "price": 42757.61,
+    "stock": 134,
+    "rating": 3.8,
+    "image": [
+      {
+        "public_id": "product_15",
+        "url": "https://picsum.photos/seed/indianproduct15/500/500"
+      }
+    ],
+    "category": "Home & Kitchen",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805607",
+    "updatedAt": "2026-03-04T17:52:42.805608"
+  },
+  {
+    "name": "realme compact product 16",
+    "description": "This is a compact furniture product specially curated for the Indian market.",
+    "price": 69162.47,
+    "stock": 151,
+    "rating": 3.6,
+    "image": [
+      {
+        "public_id": "product_16",
+        "url": "https://picsum.photos/seed/indianproduct16/500/500"
+      }
+    ],
+    "category": "Furniture",
+    "seller": "realme",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805618",
+    "updatedAt": "2026-03-04T17:52:42.805619"
+  },
+  {
+    "name": "realme advanced product 17",
+    "description": "This is a advanced home decor product specially curated for the Indian market.",
+    "price": 29254.02,
+    "stock": 92,
+    "rating": 4.1,
+    "image": [
+      {
+        "public_id": "product_17",
+        "url": "https://picsum.photos/seed/indianproduct17/500/500"
+      }
+    ],
+    "category": "Home Decor",
+    "seller": "realme",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805625",
+    "updatedAt": "2026-03-04T17:52:42.805627"
+  },
+  {
+    "name": "hero smart product 18",
+    "description": "This is a smart garden & outdoor product specially curated for the Indian market.",
+    "price": 2550.99,
+    "stock": 141,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_18",
+        "url": "https://picsum.photos/seed/indianproduct18/500/500"
+      }
+    ],
+    "category": "Garden & Outdoor",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805634",
+    "updatedAt": "2026-03-04T17:52:42.805635"
+  },
+  {
+    "name": "wildcraft budget product 19",
+    "description": "This is a budget tools & hardware product specially curated for the Indian market.",
+    "price": 78248.57,
+    "stock": 119,
+    "rating": 4.6,
+    "image": [
+      {
+        "public_id": "product_19",
+        "url": "https://picsum.photos/seed/indianproduct19/500/500"
+      }
+    ],
+    "category": "Tools & Hardware",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805642",
+    "updatedAt": "2026-03-04T17:52:42.805643"
+  },
+  {
+    "name": "reliance classic product 20",
+    "description": "This is a classic beauty & personal care product specially curated for the Indian market.",
+    "price": 77955.58,
+    "stock": 186,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_20",
+        "url": "https://picsum.photos/seed/indianproduct20/500/500"
+      }
+    ],
+    "category": "Beauty & Personal Care",
+    "seller": "reliance",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805650",
+    "updatedAt": "2026-03-04T17:52:42.805651"
+  },
+  {
+    "name": "fabindia wireless product 21",
+    "description": "This is a wireless skincare product specially curated for the Indian market.",
+    "price": 10637.2,
+    "stock": 58,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_21",
+        "url": "https://picsum.photos/seed/indianproduct21/500/500"
+      }
+    ],
+    "category": "Skincare",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805657",
+    "updatedAt": "2026-03-04T17:52:42.805658"
+  },
+  {
+    "name": "bajaj advanced product 22",
+    "description": "This is a advanced makeup product specially curated for the Indian market.",
+    "price": 42286.01,
+    "stock": 81,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_22",
+        "url": "https://picsum.photos/seed/indianproduct22/500/500"
+      }
+    ],
+    "category": "Makeup",
+    "seller": "bajaj",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805673",
+    "updatedAt": "2026-03-04T17:52:42.805676"
+  },
+  {
+    "name": "fabindia smart product 23",
+    "description": "This is a smart hair care product specially curated for the Indian market.",
+    "price": 57372.4,
+    "stock": 177,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_23",
+        "url": "https://picsum.photos/seed/indianproduct23/500/500"
+      }
+    ],
+    "category": "Hair Care",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805686",
+    "updatedAt": "2026-03-04T17:52:42.805687"
+  },
+  {
+    "name": "samsung india eco product 24",
+    "description": "This is a eco fragrance product specially curated for the Indian market.",
+    "price": 82946.72,
+    "stock": 117,
+    "rating": 4.3,
+    "image": [
+      {
+        "public_id": "product_24",
+        "url": "https://picsum.photos/seed/indianproduct24/500/500"
+      }
+    ],
+    "category": "Fragrance",
+    "seller": "samsung india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805706",
+    "updatedAt": "2026-03-04T17:52:42.805709"
+  },
+  {
+    "name": "apple india durable product 25",
+    "description": "This is a durable health & wellness product specially curated for the Indian market.",
+    "price": 7689.62,
+    "stock": 153,
+    "rating": 5.0,
+    "image": [
+      {
+        "public_id": "product_25",
+        "url": "https://picsum.photos/seed/indianproduct25/500/500"
+      }
+    ],
+    "category": "Health & Wellness",
+    "seller": "apple india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805717",
+    "updatedAt": "2026-03-04T17:52:42.805718"
+  },
+  {
+    "name": "hero eco product 26",
+    "description": "This is a eco sports & fitness product specially curated for the Indian market.",
+    "price": 52043.17,
+    "stock": 154,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_26",
+        "url": "https://picsum.photos/seed/indianproduct26/500/500"
+      }
+    ],
+    "category": "Sports & Fitness",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805725",
+    "updatedAt": "2026-03-04T17:52:42.805726"
+  },
+  {
+    "name": "hero eco product 27",
+    "description": "This is a eco exercise equipment product specially curated for the Indian market.",
+    "price": 49608.02,
+    "stock": 120,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_27",
+        "url": "https://picsum.photos/seed/indianproduct27/500/500"
+      }
+    ],
+    "category": "Exercise Equipment",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805733",
+    "updatedAt": "2026-03-04T17:52:42.805734"
+  },
+  {
+    "name": "boat compact product 28",
+    "description": "This is a compact outdoor recreation product specially curated for the Indian market.",
+    "price": 12208.21,
+    "stock": 106,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_28",
+        "url": "https://picsum.photos/seed/indianproduct28/500/500"
+      }
+    ],
+    "category": "Outdoor Recreation",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805741",
+    "updatedAt": "2026-03-04T17:52:42.805743"
+  },
+  {
+    "name": "himalaya compact product 29",
+    "description": "This is a compact camping & hiking product specially curated for the Indian market.",
+    "price": 3907.43,
+    "stock": 162,
+    "rating": 3.5,
+    "image": [
+      {
+        "public_id": "product_29",
+        "url": "https://picsum.photos/seed/indianproduct29/500/500"
+      }
+    ],
+    "category": "Camping & Hiking",
+    "seller": "himalaya",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805749",
+    "updatedAt": "2026-03-04T17:52:42.805750"
+  },
+  {
+    "name": "tata classic product 30",
+    "description": "This is a classic cycling product specially curated for the Indian market.",
+    "price": 75208.64,
+    "stock": 52,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_30",
+        "url": "https://picsum.photos/seed/indianproduct30/500/500"
+      }
+    ],
+    "category": "Cycling",
+    "seller": "tata",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805757",
+    "updatedAt": "2026-03-04T17:52:42.805758"
+  },
+  {
+    "name": "amul durable product 31",
+    "description": "This is a durable books product specially curated for the Indian market.",
+    "price": 52812.31,
+    "stock": 151,
+    "rating": 4.9,
+    "image": [
+      {
+        "public_id": "product_31",
+        "url": "https://picsum.photos/seed/indianproduct31/500/500"
+      }
+    ],
+    "category": "Books",
+    "seller": "amul",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805764",
+    "updatedAt": "2026-03-04T17:52:42.805766"
+  },
+  {
+    "name": "fabindia durable product 32",
+    "description": "This is a durable movies & tv product specially curated for the Indian market.",
+    "price": 1800.57,
+    "stock": 111,
+    "rating": 3.9,
+    "image": [
+      {
+        "public_id": "product_32",
+        "url": "https://picsum.photos/seed/indianproduct32/500/500"
+      }
+    ],
+    "category": "Movies & TV",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805772",
+    "updatedAt": "2026-03-04T17:52:42.805773"
+  },
+  {
+    "name": "realme durable product 33",
+    "description": "This is a durable music product specially curated for the Indian market.",
+    "price": 87988.46,
+    "stock": 118,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_33",
+        "url": "https://picsum.photos/seed/indianproduct33/500/500"
+      }
+    ],
+    "category": "Music",
+    "seller": "realme",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805782",
+    "updatedAt": "2026-03-04T17:52:42.805784"
+  },
+  {
+    "name": "bajaj portable product 34",
+    "description": "This is a portable stationery & office supplies product specially curated for the Indian market.",
+    "price": 22963.84,
+    "stock": 148,
+    "rating": 3.9,
+    "image": [
+      {
+        "public_id": "product_34",
+        "url": "https://picsum.photos/seed/indianproduct34/500/500"
+      }
+    ],
+    "category": "Stationery & Office Supplies",
+    "seller": "bajaj",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805790",
+    "updatedAt": "2026-03-04T17:52:42.805792"
+  },
+  {
+    "name": "wildcraft compact product 35",
+    "description": "This is a compact toys & games product specially curated for the Indian market.",
+    "price": 71547.12,
+    "stock": 180,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_35",
+        "url": "https://picsum.photos/seed/indianproduct35/500/500"
+      }
+    ],
+    "category": "Toys & Games",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805798",
+    "updatedAt": "2026-03-04T17:52:42.805799"
+  },
+  {
+    "name": "wildcraft advanced product 36",
+    "description": "This is a advanced baby products product specially curated for the Indian market.",
+    "price": 2088.3,
+    "stock": 197,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_36",
+        "url": "https://picsum.photos/seed/indianproduct36/500/500"
+      }
+    ],
+    "category": "Baby Products",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805806",
+    "updatedAt": "2026-03-04T17:52:42.805807"
+  },
+  {
+    "name": "mahindra budget product 37",
+    "description": "This is a budget educational toys product specially curated for the Indian market.",
+    "price": 64102.33,
+    "stock": 34,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_37",
+        "url": "https://picsum.photos/seed/indianproduct37/500/500"
+      }
+    ],
+    "category": "Educational Toys",
+    "seller": "mahindra",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805813",
+    "updatedAt": "2026-03-04T17:52:42.805814"
+  },
+  {
+    "name": "reliance smart product 38",
+    "description": "This is a smart automotive product specially curated for the Indian market.",
+    "price": 16991.21,
+    "stock": 32,
+    "rating": 4.1,
+    "image": [
+      {
+        "public_id": "product_38",
+        "url": "https://picsum.photos/seed/indianproduct38/500/500"
+      }
+    ],
+    "category": "Automotive",
+    "seller": "reliance",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805821",
+    "updatedAt": "2026-03-04T17:52:42.805822"
+  },
+  {
+    "name": "khadi india advanced product 39",
+    "description": "This is a advanced pet supplies product specially curated for the Indian market.",
+    "price": 19074.28,
+    "stock": 167,
+    "rating": 3.6,
+    "image": [
+      {
+        "public_id": "product_39",
+        "url": "https://picsum.photos/seed/indianproduct39/500/500"
+      }
+    ],
+    "category": "Pet Supplies",
+    "seller": "khadi india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805828",
+    "updatedAt": "2026-03-04T17:52:42.805829"
+  },
+  {
+    "name": "realme premium product 40",
+    "description": "This is a premium groceries & food product specially curated for the Indian market.",
+    "price": 89913.48,
+    "stock": 188,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_40",
+        "url": "https://picsum.photos/seed/indianproduct40/500/500"
+      }
+    ],
+    "category": "Groceries & Food",
+    "seller": "realme",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805835",
+    "updatedAt": "2026-03-04T17:52:42.805836"
+  },
+  {
+    "name": "samsung india wireless product 41",
+    "description": "This is a wireless arts & crafts product specially curated for the Indian market.",
+    "price": 51165.67,
+    "stock": 17,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_41",
+        "url": "https://picsum.photos/seed/indianproduct41/500/500"
+      }
+    ],
+    "category": "Arts & Crafts",
+    "seller": "samsung india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805844",
+    "updatedAt": "2026-03-04T17:52:42.805845"
+  },
+  {
+    "name": "boat premium product 42",
+    "description": "This is a premium industrial supplies product specially curated for the Indian market.",
+    "price": 10187.35,
+    "stock": 104,
+    "rating": 4.2,
+    "image": [
+      {
+        "public_id": "product_42",
+        "url": "https://picsum.photos/seed/indianproduct42/500/500"
+      }
+    ],
+    "category": "Industrial Supplies",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805852",
+    "updatedAt": "2026-03-04T17:52:42.805853"
+  },
+  {
+    "name": "amul wireless product 43",
+    "description": "This is a wireless business & industrial product specially curated for the Indian market.",
+    "price": 80137.52,
+    "stock": 139,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_43",
+        "url": "https://picsum.photos/seed/indianproduct43/500/500"
+      }
+    ],
+    "category": "Business & Industrial",
+    "seller": "amul",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805861",
+    "updatedAt": "2026-03-04T17:52:42.805874"
+  },
+  {
+    "name": "patanjali durable product 44",
+    "description": "This is a durable other product specially curated for the Indian market.",
+    "price": 74638.71,
+    "stock": 115,
+    "rating": 5.0,
+    "image": [
+      {
+        "public_id": "product_44",
+        "url": "https://picsum.photos/seed/indianproduct44/500/500"
+      }
+    ],
+    "category": "Other",
+    "seller": "patanjali",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805881",
+    "updatedAt": "2026-03-04T17:52:42.805882"
+  },
+  {
+    "name": "mahindra eco product 45",
+    "description": "This is a eco electronics product specially curated for the Indian market.",
+    "price": 19024.33,
+    "stock": 86,
+    "rating": 4.9,
+    "image": [
+      {
+        "public_id": "product_45",
+        "url": "https://picsum.photos/seed/indianproduct45/500/500"
+      }
+    ],
+    "category": "Electronics",
+    "seller": "mahindra",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805888",
+    "updatedAt": "2026-03-04T17:52:42.805889"
+  },
+  {
+    "name": "fabindia portable product 46",
+    "description": "This is a portable mobile phones product specially curated for the Indian market.",
+    "price": 19643.92,
+    "stock": 51,
+    "rating": 4.2,
+    "image": [
+      {
+        "public_id": "product_46",
+        "url": "https://picsum.photos/seed/indianproduct46/500/500"
+      }
+    ],
+    "category": "Mobile Phones",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805896",
+    "updatedAt": "2026-03-04T17:52:42.805897"
+  },
+  {
+    "name": "apple india durable product 47",
+    "description": "This is a durable computers & tablets product specially curated for the Indian market.",
+    "price": 63785.56,
+    "stock": 116,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_47",
+        "url": "https://picsum.photos/seed/indianproduct47/500/500"
+      }
+    ],
+    "category": "Computers & Tablets",
+    "seller": "apple india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805904",
+    "updatedAt": "2026-03-04T17:52:42.805905"
+  },
+  {
+    "name": "amul eco product 48",
+    "description": "This is a eco cameras product specially curated for the Indian market.",
+    "price": 50507.62,
+    "stock": 184,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_48",
+        "url": "https://picsum.photos/seed/indianproduct48/500/500"
+      }
+    ],
+    "category": "Cameras",
+    "seller": "amul",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805912",
+    "updatedAt": "2026-03-04T17:52:42.805914"
+  },
+  {
+    "name": "realme portable product 49",
+    "description": "This is a portable audio & headphones product specially curated for the Indian market.",
+    "price": 50683.82,
+    "stock": 48,
+    "rating": 3.6,
+    "image": [
+      {
+        "public_id": "product_49",
+        "url": "https://picsum.photos/seed/indianproduct49/500/500"
+      }
+    ],
+    "category": "Audio & Headphones",
+    "seller": "realme",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805920",
+    "updatedAt": "2026-03-04T17:52:42.805921"
+  },
+  {
+    "name": "apple india premium product 50",
+    "description": "This is a premium wearable technology product specially curated for the Indian market.",
+    "price": 24864.94,
+    "stock": 32,
+    "rating": 4.1,
+    "image": [
+      {
+        "public_id": "product_50",
+        "url": "https://picsum.photos/seed/indianproduct50/500/500"
+      }
+    ],
+    "category": "Wearable Technology",
+    "seller": "apple india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805931",
+    "updatedAt": "2026-03-04T17:52:42.805932"
+  },
+  {
+    "name": "bajaj wireless product 51",
+    "description": "This is a wireless video games & consoles product specially curated for the Indian market.",
+    "price": 58424.83,
+    "stock": 190,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_51",
+        "url": "https://picsum.photos/seed/indianproduct51/500/500"
+      }
+    ],
+    "category": "Video Games & Consoles",
+    "seller": "bajaj",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805939",
+    "updatedAt": "2026-03-04T17:52:42.805940"
+  },
+  {
+    "name": "wildcraft compact product 52",
+    "description": "This is a compact clothing product specially curated for the Indian market.",
+    "price": 57929.04,
+    "stock": 190,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_52",
+        "url": "https://picsum.photos/seed/indianproduct52/500/500"
+      }
+    ],
+    "category": "Clothing",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805946",
+    "updatedAt": "2026-03-04T17:52:42.805948"
+  },
+  {
+    "name": "hero durable product 53",
+    "description": "This is a durable men's fashion product specially curated for the Indian market.",
+    "price": 72026.72,
+    "stock": 108,
+    "rating": 4.9,
+    "image": [
+      {
+        "public_id": "product_53",
+        "url": "https://picsum.photos/seed/indianproduct53/500/500"
+      }
+    ],
+    "category": "Men's Fashion",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805954",
+    "updatedAt": "2026-03-04T17:52:42.805956"
+  },
+  {
+    "name": "samsung india wireless product 54",
+    "description": "This is a wireless women's fashion product specially curated for the Indian market.",
+    "price": 55620.95,
+    "stock": 126,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_54",
+        "url": "https://picsum.photos/seed/indianproduct54/500/500"
+      }
+    ],
+    "category": "Women's Fashion",
+    "seller": "samsung india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805962",
+    "updatedAt": "2026-03-04T17:52:42.805963"
+  },
+  {
+    "name": "mahindra smart product 55",
+    "description": "This is a smart kids' fashion product specially curated for the Indian market.",
+    "price": 41742.0,
+    "stock": 82,
+    "rating": 3.6,
+    "image": [
+      {
+        "public_id": "product_55",
+        "url": "https://picsum.photos/seed/indianproduct55/500/500"
+      }
+    ],
+    "category": "Kids' Fashion",
+    "seller": "mahindra",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805970",
+    "updatedAt": "2026-03-04T17:52:42.805971"
+  },
+  {
+    "name": "patanjali smart product 56",
+    "description": "This is a smart footwear product specially curated for the Indian market.",
+    "price": 71153.03,
+    "stock": 19,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_56",
+        "url": "https://picsum.photos/seed/indianproduct56/500/500"
+      }
+    ],
+    "category": "Footwear",
+    "seller": "patanjali",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.805977",
+    "updatedAt": "2026-03-04T17:52:42.805979"
+  },
+  {
+    "name": "hero advanced product 57",
+    "description": "This is a advanced accessories product specially curated for the Indian market.",
+    "price": 71531.9,
+    "stock": 52,
+    "rating": 3.9,
+    "image": [
+      {
+        "public_id": "product_57",
+        "url": "https://picsum.photos/seed/indianproduct57/500/500"
+      }
+    ],
+    "category": "Accessories",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806056",
+    "updatedAt": "2026-03-04T17:52:42.806058"
+  },
+  {
+    "name": "mi durable product 58",
+    "description": "This is a durable jewelry product specially curated for the Indian market.",
+    "price": 60920.03,
+    "stock": 35,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_58",
+        "url": "https://picsum.photos/seed/indianproduct58/500/500"
+      }
+    ],
+    "category": "Jewelry",
+    "seller": "mi",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806065",
+    "updatedAt": "2026-03-04T17:52:42.806067"
+  },
+  {
+    "name": "boat wireless product 59",
+    "description": "This is a wireless home & kitchen product specially curated for the Indian market.",
+    "price": 12429.52,
+    "stock": 24,
+    "rating": 4.6,
+    "image": [
+      {
+        "public_id": "product_59",
+        "url": "https://picsum.photos/seed/indianproduct59/500/500"
+      }
+    ],
+    "category": "Home & Kitchen",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806073",
+    "updatedAt": "2026-03-04T17:52:42.806074"
+  },
+  {
+    "name": "hero smart product 60",
+    "description": "This is a smart furniture product specially curated for the Indian market.",
+    "price": 13981.61,
+    "stock": 45,
+    "rating": 4.1,
+    "image": [
+      {
+        "public_id": "product_60",
+        "url": "https://picsum.photos/seed/indianproduct60/500/500"
+      }
+    ],
+    "category": "Furniture",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806081",
+    "updatedAt": "2026-03-04T17:52:42.806082"
+  },
+  {
+    "name": "reliance classic product 61",
+    "description": "This is a classic home decor product specially curated for the Indian market.",
+    "price": 63295.73,
+    "stock": 60,
+    "rating": 3.6,
+    "image": [
+      {
+        "public_id": "product_61",
+        "url": "https://picsum.photos/seed/indianproduct61/500/500"
+      }
+    ],
+    "category": "Home Decor",
+    "seller": "reliance",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806091",
+    "updatedAt": "2026-03-04T17:52:42.806093"
+  },
+  {
+    "name": "mahindra premium product 62",
+    "description": "This is a premium garden & outdoor product specially curated for the Indian market.",
+    "price": 3094.34,
+    "stock": 54,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_62",
+        "url": "https://picsum.photos/seed/indianproduct62/500/500"
+      }
+    ],
+    "category": "Garden & Outdoor",
+    "seller": "mahindra",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806099",
+    "updatedAt": "2026-03-04T17:52:42.806100"
+  },
+  {
+    "name": "fabindia budget product 63",
+    "description": "This is a budget tools & hardware product specially curated for the Indian market.",
+    "price": 68763.22,
+    "stock": 178,
+    "rating": 3.9,
+    "image": [
+      {
+        "public_id": "product_63",
+        "url": "https://picsum.photos/seed/indianproduct63/500/500"
+      }
+    ],
+    "category": "Tools & Hardware",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806106",
+    "updatedAt": "2026-03-04T17:52:42.806107"
+  },
+  {
+    "name": "mi classic product 64",
+    "description": "This is a classic beauty & personal care product specially curated for the Indian market.",
+    "price": 59915.37,
+    "stock": 29,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_64",
+        "url": "https://picsum.photos/seed/indianproduct64/500/500"
+      }
+    ],
+    "category": "Beauty & Personal Care",
+    "seller": "mi",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806113",
+    "updatedAt": "2026-03-04T17:52:42.806115"
+  },
+  {
+    "name": "boat eco product 65",
+    "description": "This is a eco skincare product specially curated for the Indian market.",
+    "price": 84832.63,
+    "stock": 91,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_65",
+        "url": "https://picsum.photos/seed/indianproduct65/500/500"
+      }
+    ],
+    "category": "Skincare",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806121",
+    "updatedAt": "2026-03-04T17:52:42.806126"
+  },
+  {
+    "name": "realme advanced product 66",
+    "description": "This is a advanced makeup product specially curated for the Indian market.",
+    "price": 95910.2,
+    "stock": 101,
+    "rating": 4.1,
+    "image": [
+      {
+        "public_id": "product_66",
+        "url": "https://picsum.photos/seed/indianproduct66/500/500"
+      }
+    ],
+    "category": "Makeup",
+    "seller": "realme",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806138",
+    "updatedAt": "2026-03-04T17:52:42.806140"
+  },
+  {
+    "name": "amul advanced product 67",
+    "description": "This is a advanced hair care product specially curated for the Indian market.",
+    "price": 64451.31,
+    "stock": 194,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_67",
+        "url": "https://picsum.photos/seed/indianproduct67/500/500"
+      }
+    ],
+    "category": "Hair Care",
+    "seller": "amul",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806149",
+    "updatedAt": "2026-03-04T17:52:42.806156"
+  },
+  {
+    "name": "realme compact product 68",
+    "description": "This is a compact fragrance product specially curated for the Indian market.",
+    "price": 99809.05,
+    "stock": 73,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_68",
+        "url": "https://picsum.photos/seed/indianproduct68/500/500"
+      }
+    ],
+    "category": "Fragrance",
+    "seller": "realme",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806167",
+    "updatedAt": "2026-03-04T17:52:42.806169"
+  },
+  {
+    "name": "amul advanced product 69",
+    "description": "This is a advanced health & wellness product specially curated for the Indian market.",
+    "price": 97229.8,
+    "stock": 58,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_69",
+        "url": "https://picsum.photos/seed/indianproduct69/500/500"
+      }
+    ],
+    "category": "Health & Wellness",
+    "seller": "amul",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806175",
+    "updatedAt": "2026-03-04T17:52:42.806176"
+  },
+  {
+    "name": "patanjali wireless product 70",
+    "description": "This is a wireless sports & fitness product specially curated for the Indian market.",
+    "price": 56960.51,
+    "stock": 169,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_70",
+        "url": "https://picsum.photos/seed/indianproduct70/500/500"
+      }
+    ],
+    "category": "Sports & Fitness",
+    "seller": "patanjali",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806182",
+    "updatedAt": "2026-03-04T17:52:42.806183"
+  },
+  {
+    "name": "fabindia budget product 71",
+    "description": "This is a budget exercise equipment product specially curated for the Indian market.",
+    "price": 74254.6,
+    "stock": 141,
+    "rating": 4.6,
+    "image": [
+      {
+        "public_id": "product_71",
+        "url": "https://picsum.photos/seed/indianproduct71/500/500"
+      }
+    ],
+    "category": "Exercise Equipment",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806189",
+    "updatedAt": "2026-03-04T17:52:42.806190"
+  },
+  {
+    "name": "samsung india wireless product 72",
+    "description": "This is a wireless outdoor recreation product specially curated for the Indian market.",
+    "price": 87949.82,
+    "stock": 51,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_72",
+        "url": "https://picsum.photos/seed/indianproduct72/500/500"
+      }
+    ],
+    "category": "Outdoor Recreation",
+    "seller": "samsung india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806196",
+    "updatedAt": "2026-03-04T17:52:42.806198"
+  },
+  {
+    "name": "reliance classic product 73",
+    "description": "This is a classic camping & hiking product specially curated for the Indian market.",
+    "price": 4405.01,
+    "stock": 186,
+    "rating": 4.9,
+    "image": [
+      {
+        "public_id": "product_73",
+        "url": "https://picsum.photos/seed/indianproduct73/500/500"
+      }
+    ],
+    "category": "Camping & Hiking",
+    "seller": "reliance",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806204",
+    "updatedAt": "2026-03-04T17:52:42.806205"
+  },
+  {
+    "name": "amul premium product 74",
+    "description": "This is a premium cycling product specially curated for the Indian market.",
+    "price": 79877.32,
+    "stock": 127,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_74",
+        "url": "https://picsum.photos/seed/indianproduct74/500/500"
+      }
+    ],
+    "category": "Cycling",
+    "seller": "amul",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806211",
+    "updatedAt": "2026-03-04T17:52:42.806212"
+  },
+  {
+    "name": "apple india portable product 75",
+    "description": "This is a portable books product specially curated for the Indian market.",
+    "price": 56121.19,
+    "stock": 67,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_75",
+        "url": "https://picsum.photos/seed/indianproduct75/500/500"
+      }
+    ],
+    "category": "Books",
+    "seller": "apple india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806219",
+    "updatedAt": "2026-03-04T17:52:42.806220"
+  },
+  {
+    "name": "amul advanced product 76",
+    "description": "This is a advanced movies & tv product specially curated for the Indian market.",
+    "price": 16371.67,
+    "stock": 15,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_76",
+        "url": "https://picsum.photos/seed/indianproduct76/500/500"
+      }
+    ],
+    "category": "Movies & TV",
+    "seller": "amul",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806226",
+    "updatedAt": "2026-03-04T17:52:42.806227"
+  },
+  {
+    "name": "apple india compact product 77",
+    "description": "This is a compact music product specially curated for the Indian market.",
+    "price": 98744.65,
+    "stock": 6,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_77",
+        "url": "https://picsum.photos/seed/indianproduct77/500/500"
+      }
+    ],
+    "category": "Music",
+    "seller": "apple india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806233",
+    "updatedAt": "2026-03-04T17:52:42.806234"
+  },
+  {
+    "name": "mi classic product 78",
+    "description": "This is a classic stationery & office supplies product specially curated for the Indian market.",
+    "price": 92855.5,
+    "stock": 114,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_78",
+        "url": "https://picsum.photos/seed/indianproduct78/500/500"
+      }
+    ],
+    "category": "Stationery & Office Supplies",
+    "seller": "mi",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806240",
+    "updatedAt": "2026-03-04T17:52:42.806242"
+  },
+  {
+    "name": "apple india compact product 79",
+    "description": "This is a compact toys & games product specially curated for the Indian market.",
+    "price": 50340.4,
+    "stock": 66,
+    "rating": 4.2,
+    "image": [
+      {
+        "public_id": "product_79",
+        "url": "https://picsum.photos/seed/indianproduct79/500/500"
+      }
+    ],
+    "category": "Toys & Games",
+    "seller": "apple india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806248",
+    "updatedAt": "2026-03-04T17:52:42.806249"
+  },
+  {
+    "name": "samsung india compact product 80",
+    "description": "This is a compact baby products product specially curated for the Indian market.",
+    "price": 79629.33,
+    "stock": 196,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_80",
+        "url": "https://picsum.photos/seed/indianproduct80/500/500"
+      }
+    ],
+    "category": "Baby Products",
+    "seller": "samsung india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806255",
+    "updatedAt": "2026-03-04T17:52:42.806257"
+  },
+  {
+    "name": "mahindra durable product 81",
+    "description": "This is a durable educational toys product specially curated for the Indian market.",
+    "price": 39763.22,
+    "stock": 44,
+    "rating": 4.2,
+    "image": [
+      {
+        "public_id": "product_81",
+        "url": "https://picsum.photos/seed/indianproduct81/500/500"
+      }
+    ],
+    "category": "Educational Toys",
+    "seller": "mahindra",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806262",
+    "updatedAt": "2026-03-04T17:52:42.806264"
+  },
+  {
+    "name": "apple india budget product 82",
+    "description": "This is a budget automotive product specially curated for the Indian market.",
+    "price": 95178.92,
+    "stock": 10,
+    "rating": 4.1,
+    "image": [
+      {
+        "public_id": "product_82",
+        "url": "https://picsum.photos/seed/indianproduct82/500/500"
+      }
+    ],
+    "category": "Automotive",
+    "seller": "apple india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806269",
+    "updatedAt": "2026-03-04T17:52:42.806270"
+  },
+  {
+    "name": "tata premium product 83",
+    "description": "This is a premium pet supplies product specially curated for the Indian market.",
+    "price": 13660.91,
+    "stock": 42,
+    "rating": 3.8,
+    "image": [
+      {
+        "public_id": "product_83",
+        "url": "https://picsum.photos/seed/indianproduct83/500/500"
+      }
+    ],
+    "category": "Pet Supplies",
+    "seller": "tata",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806276",
+    "updatedAt": "2026-03-04T17:52:42.806277"
+  },
+  {
+    "name": "hero smart product 84",
+    "description": "This is a smart groceries & food product specially curated for the Indian market.",
+    "price": 73825.94,
+    "stock": 163,
+    "rating": 3.6,
+    "image": [
+      {
+        "public_id": "product_84",
+        "url": "https://picsum.photos/seed/indianproduct84/500/500"
+      }
+    ],
+    "category": "Groceries & Food",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806283",
+    "updatedAt": "2026-03-04T17:52:42.806286"
+  },
+  {
+    "name": "amul classic product 85",
+    "description": "This is a classic arts & crafts product specially curated for the Indian market.",
+    "price": 13876.08,
+    "stock": 30,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_85",
+        "url": "https://picsum.photos/seed/indianproduct85/500/500"
+      }
+    ],
+    "category": "Arts & Crafts",
+    "seller": "amul",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806291",
+    "updatedAt": "2026-03-04T17:52:42.806293"
+  },
+  {
+    "name": "reliance eco product 86",
+    "description": "This is a eco industrial supplies product specially curated for the Indian market.",
+    "price": 403.08,
+    "stock": 110,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_86",
+        "url": "https://picsum.photos/seed/indianproduct86/500/500"
+      }
+    ],
+    "category": "Industrial Supplies",
+    "seller": "reliance",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806298",
+    "updatedAt": "2026-03-04T17:52:42.806300"
+  },
+  {
+    "name": "apple india portable product 87",
+    "description": "This is a portable business & industrial product specially curated for the Indian market.",
+    "price": 8295.71,
+    "stock": 105,
+    "rating": 4.1,
+    "image": [
+      {
+        "public_id": "product_87",
+        "url": "https://picsum.photos/seed/indianproduct87/500/500"
+      }
+    ],
+    "category": "Business & Industrial",
+    "seller": "apple india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806305",
+    "updatedAt": "2026-03-04T17:52:42.806307"
+  },
+  {
+    "name": "apple india premium product 88",
+    "description": "This is a premium other product specially curated for the Indian market.",
+    "price": 99283.88,
+    "stock": 191,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_88",
+        "url": "https://picsum.photos/seed/indianproduct88/500/500"
+      }
+    ],
+    "category": "Other",
+    "seller": "apple india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806313",
+    "updatedAt": "2026-03-04T17:52:42.806315"
+  },
+  {
+    "name": "himalaya durable product 89",
+    "description": "This is a durable electronics product specially curated for the Indian market.",
+    "price": 63884.18,
+    "stock": 73,
+    "rating": 4.2,
+    "image": [
+      {
+        "public_id": "product_89",
+        "url": "https://picsum.photos/seed/indianproduct89/500/500"
+      }
+    ],
+    "category": "Electronics",
+    "seller": "himalaya",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806321",
+    "updatedAt": "2026-03-04T17:52:42.806322"
+  },
+  {
+    "name": "reliance durable product 90",
+    "description": "This is a durable mobile phones product specially curated for the Indian market.",
+    "price": 25505.99,
+    "stock": 162,
+    "rating": 4.9,
+    "image": [
+      {
+        "public_id": "product_90",
+        "url": "https://picsum.photos/seed/indianproduct90/500/500"
+      }
+    ],
+    "category": "Mobile Phones",
+    "seller": "reliance",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806327",
+    "updatedAt": "2026-03-04T17:52:42.806329"
+  },
+  {
+    "name": "khadi india classic product 91",
+    "description": "This is a classic computers & tablets product specially curated for the Indian market.",
+    "price": 11331.62,
+    "stock": 37,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_91",
+        "url": "https://picsum.photos/seed/indianproduct91/500/500"
+      }
+    ],
+    "category": "Computers & Tablets",
+    "seller": "khadi india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806334",
+    "updatedAt": "2026-03-04T17:52:42.806336"
+  },
+  {
+    "name": "hero eco product 92",
+    "description": "This is a eco cameras product specially curated for the Indian market.",
+    "price": 86820.08,
+    "stock": 16,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_92",
+        "url": "https://picsum.photos/seed/indianproduct92/500/500"
+      }
+    ],
+    "category": "Cameras",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806342",
+    "updatedAt": "2026-03-04T17:52:42.806343"
+  },
+  {
+    "name": "amul wireless product 93",
+    "description": "This is a wireless audio & headphones product specially curated for the Indian market.",
+    "price": 9855.83,
+    "stock": 98,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_93",
+        "url": "https://picsum.photos/seed/indianproduct93/500/500"
+      }
+    ],
+    "category": "Audio & Headphones",
+    "seller": "amul",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806349",
+    "updatedAt": "2026-03-04T17:52:42.806350"
+  },
+  {
+    "name": "reliance premium product 94",
+    "description": "This is a premium wearable technology product specially curated for the Indian market.",
+    "price": 37927.04,
+    "stock": 156,
+    "rating": 4.3,
+    "image": [
+      {
+        "public_id": "product_94",
+        "url": "https://picsum.photos/seed/indianproduct94/500/500"
+      }
+    ],
+    "category": "Wearable Technology",
+    "seller": "reliance",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806356",
+    "updatedAt": "2026-03-04T17:52:42.806357"
+  },
+  {
+    "name": "mahindra smart product 95",
+    "description": "This is a smart video games & consoles product specially curated for the Indian market.",
+    "price": 58226.28,
+    "stock": 179,
+    "rating": 4.9,
+    "image": [
+      {
+        "public_id": "product_95",
+        "url": "https://picsum.photos/seed/indianproduct95/500/500"
+      }
+    ],
+    "category": "Video Games & Consoles",
+    "seller": "mahindra",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806363",
+    "updatedAt": "2026-03-04T17:52:42.806364"
+  },
+  {
+    "name": "bajaj compact product 96",
+    "description": "This is a compact clothing product specially curated for the Indian market.",
+    "price": 65809.67,
+    "stock": 150,
+    "rating": 3.5,
+    "image": [
+      {
+        "public_id": "product_96",
+        "url": "https://picsum.photos/seed/indianproduct96/500/500"
+      }
+    ],
+    "category": "Clothing",
+    "seller": "bajaj",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806370",
+    "updatedAt": "2026-03-04T17:52:42.806372"
+  },
+  {
+    "name": "mi smart product 97",
+    "description": "This is a smart men's fashion product specially curated for the Indian market.",
+    "price": 76448.12,
+    "stock": 161,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_97",
+        "url": "https://picsum.photos/seed/indianproduct97/500/500"
+      }
+    ],
+    "category": "Men's Fashion",
+    "seller": "mi",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806378",
+    "updatedAt": "2026-03-04T17:52:42.806380"
+  },
+  {
+    "name": "hero budget product 98",
+    "description": "This is a budget women's fashion product specially curated for the Indian market.",
+    "price": 40534.51,
+    "stock": 133,
+    "rating": 4.6,
+    "image": [
+      {
+        "public_id": "product_98",
+        "url": "https://picsum.photos/seed/indianproduct98/500/500"
+      }
+    ],
+    "category": "Women's Fashion",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806386",
+    "updatedAt": "2026-03-04T17:52:42.806387"
+  },
+  {
+    "name": "wildcraft classic product 99",
+    "description": "This is a classic kids' fashion product specially curated for the Indian market.",
+    "price": 44093.33,
+    "stock": 192,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_99",
+        "url": "https://picsum.photos/seed/indianproduct99/500/500"
+      }
+    ],
+    "category": "Kids' Fashion",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806392",
+    "updatedAt": "2026-03-04T17:52:42.806394"
+  },
+  {
+    "name": "realme smart product 100",
+    "description": "This is a smart footwear product specially curated for the Indian market.",
+    "price": 9614.12,
+    "stock": 89,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_100",
+        "url": "https://picsum.photos/seed/indianproduct100/500/500"
+      }
+    ],
+    "category": "Footwear",
+    "seller": "realme",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806404",
+    "updatedAt": "2026-03-04T17:52:42.806406"
+  },
+  {
+    "name": "boat classic product 101",
+    "description": "This is a classic accessories product specially curated for the Indian market.",
+    "price": 38177.58,
+    "stock": 118,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_101",
+        "url": "https://picsum.photos/seed/indianproduct101/500/500"
+      }
+    ],
+    "category": "Accessories",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806411",
+    "updatedAt": "2026-03-04T17:52:42.806413"
+  },
+  {
+    "name": "hero compact product 102",
+    "description": "This is a compact jewelry product specially curated for the Indian market.",
+    "price": 63967.52,
+    "stock": 9,
+    "rating": 4.6,
+    "image": [
+      {
+        "public_id": "product_102",
+        "url": "https://picsum.photos/seed/indianproduct102/500/500"
+      }
+    ],
+    "category": "Jewelry",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806419",
+    "updatedAt": "2026-03-04T17:52:42.806420"
+  },
+  {
+    "name": "mi eco product 103",
+    "description": "This is a eco home & kitchen product specially curated for the Indian market.",
+    "price": 30742.3,
+    "stock": 37,
+    "rating": 5.0,
+    "image": [
+      {
+        "public_id": "product_103",
+        "url": "https://picsum.photos/seed/indianproduct103/500/500"
+      }
+    ],
+    "category": "Home & Kitchen",
+    "seller": "mi",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806426",
+    "updatedAt": "2026-03-04T17:52:42.806427"
+  },
+  {
+    "name": "fabindia smart product 104",
+    "description": "This is a smart furniture product specially curated for the Indian market.",
+    "price": 7535.05,
+    "stock": 85,
+    "rating": 4.9,
+    "image": [
+      {
+        "public_id": "product_104",
+        "url": "https://picsum.photos/seed/indianproduct104/500/500"
+      }
+    ],
+    "category": "Furniture",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806433",
+    "updatedAt": "2026-03-04T17:52:42.806434"
+  },
+  {
+    "name": "boat budget product 105",
+    "description": "This is a budget home decor product specially curated for the Indian market.",
+    "price": 27020.56,
+    "stock": 73,
+    "rating": 5.0,
+    "image": [
+      {
+        "public_id": "product_105",
+        "url": "https://picsum.photos/seed/indianproduct105/500/500"
+      }
+    ],
+    "category": "Home Decor",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806440",
+    "updatedAt": "2026-03-04T17:52:42.806442"
+  },
+  {
+    "name": "wildcraft budget product 106",
+    "description": "This is a budget garden & outdoor product specially curated for the Indian market.",
+    "price": 75209.34,
+    "stock": 64,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_106",
+        "url": "https://picsum.photos/seed/indianproduct106/500/500"
+      }
+    ],
+    "category": "Garden & Outdoor",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806447",
+    "updatedAt": "2026-03-04T17:52:42.806449"
+  },
+  {
+    "name": "khadi india smart product 107",
+    "description": "This is a smart tools & hardware product specially curated for the Indian market.",
+    "price": 53003.84,
+    "stock": 40,
+    "rating": 4.9,
+    "image": [
+      {
+        "public_id": "product_107",
+        "url": "https://picsum.photos/seed/indianproduct107/500/500"
+      }
+    ],
+    "category": "Tools & Hardware",
+    "seller": "khadi india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806454",
+    "updatedAt": "2026-03-04T17:52:42.806456"
+  },
+  {
+    "name": "hero smart product 108",
+    "description": "This is a smart beauty & personal care product specially curated for the Indian market.",
+    "price": 22169.11,
+    "stock": 31,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_108",
+        "url": "https://picsum.photos/seed/indianproduct108/500/500"
+      }
+    ],
+    "category": "Beauty & Personal Care",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806462",
+    "updatedAt": "2026-03-04T17:52:42.806463"
+  },
+  {
+    "name": "khadi india portable product 109",
+    "description": "This is a portable skincare product specially curated for the Indian market.",
+    "price": 76903.57,
+    "stock": 154,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_109",
+        "url": "https://picsum.photos/seed/indianproduct109/500/500"
+      }
+    ],
+    "category": "Skincare",
+    "seller": "khadi india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806469",
+    "updatedAt": "2026-03-04T17:52:42.806470"
+  },
+  {
+    "name": "himalaya durable product 110",
+    "description": "This is a durable makeup product specially curated for the Indian market.",
+    "price": 47533.16,
+    "stock": 11,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_110",
+        "url": "https://picsum.photos/seed/indianproduct110/500/500"
+      }
+    ],
+    "category": "Makeup",
+    "seller": "himalaya",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806476",
+    "updatedAt": "2026-03-04T17:52:42.806477"
+  },
+  {
+    "name": "fabindia portable product 111",
+    "description": "This is a portable hair care product specially curated for the Indian market.",
+    "price": 27588.28,
+    "stock": 68,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_111",
+        "url": "https://picsum.photos/seed/indianproduct111/500/500"
+      }
+    ],
+    "category": "Hair Care",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806483",
+    "updatedAt": "2026-03-04T17:52:42.806485"
+  },
+  {
+    "name": "wildcraft classic product 112",
+    "description": "This is a classic fragrance product specially curated for the Indian market.",
+    "price": 40524.34,
+    "stock": 65,
+    "rating": 4.3,
+    "image": [
+      {
+        "public_id": "product_112",
+        "url": "https://picsum.photos/seed/indianproduct112/500/500"
+      }
+    ],
+    "category": "Fragrance",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806491",
+    "updatedAt": "2026-03-04T17:52:42.806492"
+  },
+  {
+    "name": "amul wireless product 113",
+    "description": "This is a wireless health & wellness product specially curated for the Indian market.",
+    "price": 10338.02,
+    "stock": 18,
+    "rating": 4.9,
+    "image": [
+      {
+        "public_id": "product_113",
+        "url": "https://picsum.photos/seed/indianproduct113/500/500"
+      }
+    ],
+    "category": "Health & Wellness",
+    "seller": "amul",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806498",
+    "updatedAt": "2026-03-04T17:52:42.806499"
+  },
+  {
+    "name": "mi classic product 114",
+    "description": "This is a classic sports & fitness product specially curated for the Indian market.",
+    "price": 46439.59,
+    "stock": 30,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_114",
+        "url": "https://picsum.photos/seed/indianproduct114/500/500"
+      }
+    ],
+    "category": "Sports & Fitness",
+    "seller": "mi",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806505",
+    "updatedAt": "2026-03-04T17:52:42.806506"
+  },
+  {
+    "name": "hero wireless product 115",
+    "description": "This is a wireless exercise equipment product specially curated for the Indian market.",
+    "price": 929.17,
+    "stock": 169,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_115",
+        "url": "https://picsum.photos/seed/indianproduct115/500/500"
+      }
+    ],
+    "category": "Exercise Equipment",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806512",
+    "updatedAt": "2026-03-04T17:52:42.806513"
+  },
+  {
+    "name": "boat advanced product 116",
+    "description": "This is a advanced outdoor recreation product specially curated for the Indian market.",
+    "price": 61523.91,
+    "stock": 16,
+    "rating": 3.6,
+    "image": [
+      {
+        "public_id": "product_116",
+        "url": "https://picsum.photos/seed/indianproduct116/500/500"
+      }
+    ],
+    "category": "Outdoor Recreation",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806519",
+    "updatedAt": "2026-03-04T17:52:42.806520"
+  },
+  {
+    "name": "khadi india advanced product 117",
+    "description": "This is a advanced camping & hiking product specially curated for the Indian market.",
+    "price": 9207.07,
+    "stock": 118,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_117",
+        "url": "https://picsum.photos/seed/indianproduct117/500/500"
+      }
+    ],
+    "category": "Camping & Hiking",
+    "seller": "khadi india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806527",
+    "updatedAt": "2026-03-04T17:52:42.806529"
+  },
+  {
+    "name": "realme smart product 118",
+    "description": "This is a smart cycling product specially curated for the Indian market.",
+    "price": 98609.41,
+    "stock": 110,
+    "rating": 3.8,
+    "image": [
+      {
+        "public_id": "product_118",
+        "url": "https://picsum.photos/seed/indianproduct118/500/500"
+      }
+    ],
+    "category": "Cycling",
+    "seller": "realme",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806535",
+    "updatedAt": "2026-03-04T17:52:42.806536"
+  },
+  {
+    "name": "himalaya portable product 119",
+    "description": "This is a portable books product specially curated for the Indian market.",
+    "price": 18816.55,
+    "stock": 124,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_119",
+        "url": "https://picsum.photos/seed/indianproduct119/500/500"
+      }
+    ],
+    "category": "Books",
+    "seller": "himalaya",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806542",
+    "updatedAt": "2026-03-04T17:52:42.806543"
+  },
+  {
+    "name": "bajaj wireless product 120",
+    "description": "This is a wireless movies & tv product specially curated for the Indian market.",
+    "price": 45547.19,
+    "stock": 117,
+    "rating": 5.0,
+    "image": [
+      {
+        "public_id": "product_120",
+        "url": "https://picsum.photos/seed/indianproduct120/500/500"
+      }
+    ],
+    "category": "Movies & TV",
+    "seller": "bajaj",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806549",
+    "updatedAt": "2026-03-04T17:52:42.806551"
+  },
+  {
+    "name": "wildcraft compact product 121",
+    "description": "This is a compact music product specially curated for the Indian market.",
+    "price": 73567.04,
+    "stock": 42,
+    "rating": 3.8,
+    "image": [
+      {
+        "public_id": "product_121",
+        "url": "https://picsum.photos/seed/indianproduct121/500/500"
+      }
+    ],
+    "category": "Music",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806557",
+    "updatedAt": "2026-03-04T17:52:42.806558"
+  },
+  {
+    "name": "samsung india compact product 122",
+    "description": "This is a compact stationery & office supplies product specially curated for the Indian market.",
+    "price": 12922.27,
+    "stock": 199,
+    "rating": 3.6,
+    "image": [
+      {
+        "public_id": "product_122",
+        "url": "https://picsum.photos/seed/indianproduct122/500/500"
+      }
+    ],
+    "category": "Stationery & Office Supplies",
+    "seller": "samsung india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806564",
+    "updatedAt": "2026-03-04T17:52:42.806565"
+  },
+  {
+    "name": "reliance budget product 123",
+    "description": "This is a budget toys & games product specially curated for the Indian market.",
+    "price": 34456.02,
+    "stock": 43,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_123",
+        "url": "https://picsum.photos/seed/indianproduct123/500/500"
+      }
+    ],
+    "category": "Toys & Games",
+    "seller": "reliance",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806570",
+    "updatedAt": "2026-03-04T17:52:42.806572"
+  },
+  {
+    "name": "bajaj compact product 124",
+    "description": "This is a compact baby products product specially curated for the Indian market.",
+    "price": 20444.36,
+    "stock": 134,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_124",
+        "url": "https://picsum.photos/seed/indianproduct124/500/500"
+      }
+    ],
+    "category": "Baby Products",
+    "seller": "bajaj",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806580",
+    "updatedAt": "2026-03-04T17:52:42.806582"
+  },
+  {
+    "name": "boat compact product 125",
+    "description": "This is a compact educational toys product specially curated for the Indian market.",
+    "price": 8358.72,
+    "stock": 51,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_125",
+        "url": "https://picsum.photos/seed/indianproduct125/500/500"
+      }
+    ],
+    "category": "Educational Toys",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806587",
+    "updatedAt": "2026-03-04T17:52:42.806589"
+  },
+  {
+    "name": "apple india budget product 126",
+    "description": "This is a budget automotive product specially curated for the Indian market.",
+    "price": 28943.12,
+    "stock": 88,
+    "rating": 4.3,
+    "image": [
+      {
+        "public_id": "product_126",
+        "url": "https://picsum.photos/seed/indianproduct126/500/500"
+      }
+    ],
+    "category": "Automotive",
+    "seller": "apple india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806595",
+    "updatedAt": "2026-03-04T17:52:42.806596"
+  },
+  {
+    "name": "wildcraft budget product 127",
+    "description": "This is a budget pet supplies product specially curated for the Indian market.",
+    "price": 61187.6,
+    "stock": 121,
+    "rating": 4.6,
+    "image": [
+      {
+        "public_id": "product_127",
+        "url": "https://picsum.photos/seed/indianproduct127/500/500"
+      }
+    ],
+    "category": "Pet Supplies",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806602",
+    "updatedAt": "2026-03-04T17:52:42.806603"
+  },
+  {
+    "name": "mahindra portable product 128",
+    "description": "This is a portable groceries & food product specially curated for the Indian market.",
+    "price": 39329.41,
+    "stock": 177,
+    "rating": 4.2,
+    "image": [
+      {
+        "public_id": "product_128",
+        "url": "https://picsum.photos/seed/indianproduct128/500/500"
+      }
+    ],
+    "category": "Groceries & Food",
+    "seller": "mahindra",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806609",
+    "updatedAt": "2026-03-04T17:52:42.806610"
+  },
+  {
+    "name": "mahindra advanced product 129",
+    "description": "This is a advanced arts & crafts product specially curated for the Indian market.",
+    "price": 98680.66,
+    "stock": 191,
+    "rating": 4.3,
+    "image": [
+      {
+        "public_id": "product_129",
+        "url": "https://picsum.photos/seed/indianproduct129/500/500"
+      }
+    ],
+    "category": "Arts & Crafts",
+    "seller": "mahindra",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806616",
+    "updatedAt": "2026-03-04T17:52:42.806618"
+  },
+  {
+    "name": "reliance classic product 130",
+    "description": "This is a classic industrial supplies product specially curated for the Indian market.",
+    "price": 99529.45,
+    "stock": 14,
+    "rating": 5.0,
+    "image": [
+      {
+        "public_id": "product_130",
+        "url": "https://picsum.photos/seed/indianproduct130/500/500"
+      }
+    ],
+    "category": "Industrial Supplies",
+    "seller": "reliance",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806625",
+    "updatedAt": "2026-03-04T17:52:42.806626"
+  },
+  {
+    "name": "fabindia advanced product 131",
+    "description": "This is a advanced business & industrial product specially curated for the Indian market.",
+    "price": 28024.54,
+    "stock": 187,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_131",
+        "url": "https://picsum.photos/seed/indianproduct131/500/500"
+      }
+    ],
+    "category": "Business & Industrial",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806632",
+    "updatedAt": "2026-03-04T17:52:42.806633"
+  },
+  {
+    "name": "realme smart product 132",
+    "description": "This is a smart other product specially curated for the Indian market.",
+    "price": 14404.18,
+    "stock": 117,
+    "rating": 5.0,
+    "image": [
+      {
+        "public_id": "product_132",
+        "url": "https://picsum.photos/seed/indianproduct132/500/500"
+      }
+    ],
+    "category": "Other",
+    "seller": "realme",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806639",
+    "updatedAt": "2026-03-04T17:52:42.806640"
+  },
+  {
+    "name": "bajaj classic product 133",
+    "description": "This is a classic electronics product specially curated for the Indian market.",
+    "price": 48362.38,
+    "stock": 166,
+    "rating": 3.5,
+    "image": [
+      {
+        "public_id": "product_133",
+        "url": "https://picsum.photos/seed/indianproduct133/500/500"
+      }
+    ],
+    "category": "Electronics",
+    "seller": "bajaj",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806649",
+    "updatedAt": "2026-03-04T17:52:42.806650"
+  },
+  {
+    "name": "wildcraft compact product 134",
+    "description": "This is a compact mobile phones product specially curated for the Indian market.",
+    "price": 42175.69,
+    "stock": 146,
+    "rating": 4.9,
+    "image": [
+      {
+        "public_id": "product_134",
+        "url": "https://picsum.photos/seed/indianproduct134/500/500"
+      }
+    ],
+    "category": "Mobile Phones",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806656",
+    "updatedAt": "2026-03-04T17:52:42.806657"
+  },
+  {
+    "name": "wildcraft classic product 135",
+    "description": "This is a classic computers & tablets product specially curated for the Indian market.",
+    "price": 77472.54,
+    "stock": 194,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_135",
+        "url": "https://picsum.photos/seed/indianproduct135/500/500"
+      }
+    ],
+    "category": "Computers & Tablets",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806663",
+    "updatedAt": "2026-03-04T17:52:42.806664"
+  },
+  {
+    "name": "himalaya wireless product 136",
+    "description": "This is a wireless cameras product specially curated for the Indian market.",
+    "price": 3295.11,
+    "stock": 70,
+    "rating": 4.2,
+    "image": [
+      {
+        "public_id": "product_136",
+        "url": "https://picsum.photos/seed/indianproduct136/500/500"
+      }
+    ],
+    "category": "Cameras",
+    "seller": "himalaya",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806670",
+    "updatedAt": "2026-03-04T17:52:42.806671"
+  },
+  {
+    "name": "boat classic product 137",
+    "description": "This is a classic audio & headphones product specially curated for the Indian market.",
+    "price": 84795.94,
+    "stock": 121,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_137",
+        "url": "https://picsum.photos/seed/indianproduct137/500/500"
+      }
+    ],
+    "category": "Audio & Headphones",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806676",
+    "updatedAt": "2026-03-04T17:52:42.806678"
+  },
+  {
+    "name": "fabindia classic product 138",
+    "description": "This is a classic wearable technology product specially curated for the Indian market.",
+    "price": 97784.02,
+    "stock": 44,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_138",
+        "url": "https://picsum.photos/seed/indianproduct138/500/500"
+      }
+    ],
+    "category": "Wearable Technology",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806684",
+    "updatedAt": "2026-03-04T17:52:42.806685"
+  },
+  {
+    "name": "mahindra classic product 139",
+    "description": "This is a classic video games & consoles product specially curated for the Indian market.",
+    "price": 6832.05,
+    "stock": 179,
+    "rating": 3.9,
+    "image": [
+      {
+        "public_id": "product_139",
+        "url": "https://picsum.photos/seed/indianproduct139/500/500"
+      }
+    ],
+    "category": "Video Games & Consoles",
+    "seller": "mahindra",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806691",
+    "updatedAt": "2026-03-04T17:52:42.806692"
+  },
+  {
+    "name": "mi advanced product 140",
+    "description": "This is a advanced clothing product specially curated for the Indian market.",
+    "price": 31842.64,
+    "stock": 21,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_140",
+        "url": "https://picsum.photos/seed/indianproduct140/500/500"
+      }
+    ],
+    "category": "Clothing",
+    "seller": "mi",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806699",
+    "updatedAt": "2026-03-04T17:52:42.806700"
+  },
+  {
+    "name": "mahindra premium product 141",
+    "description": "This is a premium men's fashion product specially curated for the Indian market.",
+    "price": 11500.72,
+    "stock": 60,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_141",
+        "url": "https://picsum.photos/seed/indianproduct141/500/500"
+      }
+    ],
+    "category": "Men's Fashion",
+    "seller": "mahindra",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806706",
+    "updatedAt": "2026-03-04T17:52:42.806708"
+  },
+  {
+    "name": "fabindia compact product 142",
+    "description": "This is a compact women's fashion product specially curated for the Indian market.",
+    "price": 4368.66,
+    "stock": 84,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_142",
+        "url": "https://picsum.photos/seed/indianproduct142/500/500"
+      }
+    ],
+    "category": "Women's Fashion",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806714",
+    "updatedAt": "2026-03-04T17:52:42.806715"
+  },
+  {
+    "name": "bajaj compact product 143",
+    "description": "This is a compact kids' fashion product specially curated for the Indian market.",
+    "price": 39644.57,
+    "stock": 36,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_143",
+        "url": "https://picsum.photos/seed/indianproduct143/500/500"
+      }
+    ],
+    "category": "Kids' Fashion",
+    "seller": "bajaj",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806722",
+    "updatedAt": "2026-03-04T17:52:42.806723"
+  },
+  {
+    "name": "himalaya budget product 144",
+    "description": "This is a budget footwear product specially curated for the Indian market.",
+    "price": 49098.05,
+    "stock": 195,
+    "rating": 4.9,
+    "image": [
+      {
+        "public_id": "product_144",
+        "url": "https://picsum.photos/seed/indianproduct144/500/500"
+      }
+    ],
+    "category": "Footwear",
+    "seller": "himalaya",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806729",
+    "updatedAt": "2026-03-04T17:52:42.806730"
+  },
+  {
+    "name": "fabindia budget product 145",
+    "description": "This is a budget accessories product specially curated for the Indian market.",
+    "price": 35044.27,
+    "stock": 164,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_145",
+        "url": "https://picsum.photos/seed/indianproduct145/500/500"
+      }
+    ],
+    "category": "Accessories",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806736",
+    "updatedAt": "2026-03-04T17:52:42.806737"
+  },
+  {
+    "name": "wildcraft classic product 146",
+    "description": "This is a classic jewelry product specially curated for the Indian market.",
+    "price": 20577.24,
+    "stock": 180,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_146",
+        "url": "https://picsum.photos/seed/indianproduct146/500/500"
+      }
+    ],
+    "category": "Jewelry",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806748",
+    "updatedAt": "2026-03-04T17:52:42.806750"
+  },
+  {
+    "name": "mi compact product 147",
+    "description": "This is a compact home & kitchen product specially curated for the Indian market.",
+    "price": 10938.88,
+    "stock": 82,
+    "rating": 4.6,
+    "image": [
+      {
+        "public_id": "product_147",
+        "url": "https://picsum.photos/seed/indianproduct147/500/500"
+      }
+    ],
+    "category": "Home & Kitchen",
+    "seller": "mi",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806759",
+    "updatedAt": "2026-03-04T17:52:42.806761"
+  },
+  {
+    "name": "himalaya durable product 148",
+    "description": "This is a durable furniture product specially curated for the Indian market.",
+    "price": 34471.45,
+    "stock": 179,
+    "rating": 4.1,
+    "image": [
+      {
+        "public_id": "product_148",
+        "url": "https://picsum.photos/seed/indianproduct148/500/500"
+      }
+    ],
+    "category": "Furniture",
+    "seller": "himalaya",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806773",
+    "updatedAt": "2026-03-04T17:52:42.806774"
+  },
+  {
+    "name": "fabindia portable product 149",
+    "description": "This is a portable home decor product specially curated for the Indian market.",
+    "price": 85913.55,
+    "stock": 119,
+    "rating": 4.3,
+    "image": [
+      {
+        "public_id": "product_149",
+        "url": "https://picsum.photos/seed/indianproduct149/500/500"
+      }
+    ],
+    "category": "Home Decor",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806780",
+    "updatedAt": "2026-03-04T17:52:42.806782"
+  },
+  {
+    "name": "realme wireless product 150",
+    "description": "This is a wireless garden & outdoor product specially curated for the Indian market.",
+    "price": 1816.26,
+    "stock": 163,
+    "rating": 3.8,
+    "image": [
+      {
+        "public_id": "product_150",
+        "url": "https://picsum.photos/seed/indianproduct150/500/500"
+      }
+    ],
+    "category": "Garden & Outdoor",
+    "seller": "realme",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806788",
+    "updatedAt": "2026-03-04T17:52:42.806789"
+  },
+  {
+    "name": "mi smart product 151",
+    "description": "This is a smart tools & hardware product specially curated for the Indian market.",
+    "price": 69766.23,
+    "stock": 190,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_151",
+        "url": "https://picsum.photos/seed/indianproduct151/500/500"
+      }
+    ],
+    "category": "Tools & Hardware",
+    "seller": "mi",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806795",
+    "updatedAt": "2026-03-04T17:52:42.806796"
+  },
+  {
+    "name": "patanjali eco product 152",
+    "description": "This is a eco beauty & personal care product specially curated for the Indian market.",
+    "price": 3684.41,
+    "stock": 178,
+    "rating": 4.2,
+    "image": [
+      {
+        "public_id": "product_152",
+        "url": "https://picsum.photos/seed/indianproduct152/500/500"
+      }
+    ],
+    "category": "Beauty & Personal Care",
+    "seller": "patanjali",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806803",
+    "updatedAt": "2026-03-04T17:52:42.806804"
+  },
+  {
+    "name": "mahindra compact product 153",
+    "description": "This is a compact skincare product specially curated for the Indian market.",
+    "price": 74197.76,
+    "stock": 16,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_153",
+        "url": "https://picsum.photos/seed/indianproduct153/500/500"
+      }
+    ],
+    "category": "Skincare",
+    "seller": "mahindra",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806810",
+    "updatedAt": "2026-03-04T17:52:42.806811"
+  },
+  {
+    "name": "samsung india portable product 154",
+    "description": "This is a portable makeup product specially curated for the Indian market.",
+    "price": 498.16,
+    "stock": 14,
+    "rating": 4.3,
+    "image": [
+      {
+        "public_id": "product_154",
+        "url": "https://picsum.photos/seed/indianproduct154/500/500"
+      }
+    ],
+    "category": "Makeup",
+    "seller": "samsung india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806817",
+    "updatedAt": "2026-03-04T17:52:42.806818"
+  },
+  {
+    "name": "tata premium product 155",
+    "description": "This is a premium hair care product specially curated for the Indian market.",
+    "price": 85530.69,
+    "stock": 110,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_155",
+        "url": "https://picsum.photos/seed/indianproduct155/500/500"
+      }
+    ],
+    "category": "Hair Care",
+    "seller": "tata",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806824",
+    "updatedAt": "2026-03-04T17:52:42.806825"
+  },
+  {
+    "name": "tata smart product 156",
+    "description": "This is a smart fragrance product specially curated for the Indian market.",
+    "price": 47730.61,
+    "stock": 57,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_156",
+        "url": "https://picsum.photos/seed/indianproduct156/500/500"
+      }
+    ],
+    "category": "Fragrance",
+    "seller": "tata",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806831",
+    "updatedAt": "2026-03-04T17:52:42.806832"
+  },
+  {
+    "name": "wildcraft durable product 157",
+    "description": "This is a durable health & wellness product specially curated for the Indian market.",
+    "price": 6736.57,
+    "stock": 27,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_157",
+        "url": "https://picsum.photos/seed/indianproduct157/500/500"
+      }
+    ],
+    "category": "Health & Wellness",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806838",
+    "updatedAt": "2026-03-04T17:52:42.806840"
+  },
+  {
+    "name": "bajaj advanced product 158",
+    "description": "This is a advanced sports & fitness product specially curated for the Indian market.",
+    "price": 10960.04,
+    "stock": 150,
+    "rating": 3.8,
+    "image": [
+      {
+        "public_id": "product_158",
+        "url": "https://picsum.photos/seed/indianproduct158/500/500"
+      }
+    ],
+    "category": "Sports & Fitness",
+    "seller": "bajaj",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806845",
+    "updatedAt": "2026-03-04T17:52:42.806846"
+  },
+  {
+    "name": "bajaj classic product 159",
+    "description": "This is a classic exercise equipment product specially curated for the Indian market.",
+    "price": 64777.79,
+    "stock": 174,
+    "rating": 3.6,
+    "image": [
+      {
+        "public_id": "product_159",
+        "url": "https://picsum.photos/seed/indianproduct159/500/500"
+      }
+    ],
+    "category": "Exercise Equipment",
+    "seller": "bajaj",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806852",
+    "updatedAt": "2026-03-04T17:52:42.806853"
+  },
+  {
+    "name": "reliance portable product 160",
+    "description": "This is a portable outdoor recreation product specially curated for the Indian market.",
+    "price": 14198.13,
+    "stock": 55,
+    "rating": 3.9,
+    "image": [
+      {
+        "public_id": "product_160",
+        "url": "https://picsum.photos/seed/indianproduct160/500/500"
+      }
+    ],
+    "category": "Outdoor Recreation",
+    "seller": "reliance",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806859",
+    "updatedAt": "2026-03-04T17:52:42.806860"
+  },
+  {
+    "name": "wildcraft portable product 161",
+    "description": "This is a portable camping & hiking product specially curated for the Indian market.",
+    "price": 73222.78,
+    "stock": 146,
+    "rating": 3.8,
+    "image": [
+      {
+        "public_id": "product_161",
+        "url": "https://picsum.photos/seed/indianproduct161/500/500"
+      }
+    ],
+    "category": "Camping & Hiking",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806865",
+    "updatedAt": "2026-03-04T17:52:42.806867"
+  },
+  {
+    "name": "khadi india portable product 162",
+    "description": "This is a portable cycling product specially curated for the Indian market.",
+    "price": 55096.62,
+    "stock": 47,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_162",
+        "url": "https://picsum.photos/seed/indianproduct162/500/500"
+      }
+    ],
+    "category": "Cycling",
+    "seller": "khadi india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806874",
+    "updatedAt": "2026-03-04T17:52:42.806875"
+  },
+  {
+    "name": "boat eco product 163",
+    "description": "This is a eco books product specially curated for the Indian market.",
+    "price": 97797.91,
+    "stock": 119,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_163",
+        "url": "https://picsum.photos/seed/indianproduct163/500/500"
+      }
+    ],
+    "category": "Books",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806885",
+    "updatedAt": "2026-03-04T17:52:42.806887"
+  },
+  {
+    "name": "samsung india eco product 164",
+    "description": "This is a eco movies & tv product specially curated for the Indian market.",
+    "price": 37792.73,
+    "stock": 70,
+    "rating": 4.3,
+    "image": [
+      {
+        "public_id": "product_164",
+        "url": "https://picsum.photos/seed/indianproduct164/500/500"
+      }
+    ],
+    "category": "Movies & TV",
+    "seller": "samsung india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806895",
+    "updatedAt": "2026-03-04T17:52:42.806896"
+  },
+  {
+    "name": "himalaya advanced product 165",
+    "description": "This is a advanced music product specially curated for the Indian market.",
+    "price": 92938.4,
+    "stock": 183,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_165",
+        "url": "https://picsum.photos/seed/indianproduct165/500/500"
+      }
+    ],
+    "category": "Music",
+    "seller": "himalaya",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806902",
+    "updatedAt": "2026-03-04T17:52:42.806903"
+  },
+  {
+    "name": "hero classic product 166",
+    "description": "This is a classic stationery & office supplies product specially curated for the Indian market.",
+    "price": 44717.52,
+    "stock": 50,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_166",
+        "url": "https://picsum.photos/seed/indianproduct166/500/500"
+      }
+    ],
+    "category": "Stationery & Office Supplies",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806909",
+    "updatedAt": "2026-03-04T17:52:42.806910"
+  },
+  {
+    "name": "reliance smart product 167",
+    "description": "This is a smart toys & games product specially curated for the Indian market.",
+    "price": 56118.78,
+    "stock": 132,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_167",
+        "url": "https://picsum.photos/seed/indianproduct167/500/500"
+      }
+    ],
+    "category": "Toys & Games",
+    "seller": "reliance",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806916",
+    "updatedAt": "2026-03-04T17:52:42.806917"
+  },
+  {
+    "name": "amul wireless product 168",
+    "description": "This is a wireless baby products product specially curated for the Indian market.",
+    "price": 31366.27,
+    "stock": 43,
+    "rating": 4.2,
+    "image": [
+      {
+        "public_id": "product_168",
+        "url": "https://picsum.photos/seed/indianproduct168/500/500"
+      }
+    ],
+    "category": "Baby Products",
+    "seller": "amul",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806934",
+    "updatedAt": "2026-03-04T17:52:42.806935"
+  },
+  {
+    "name": "patanjali portable product 169",
+    "description": "This is a portable educational toys product specially curated for the Indian market.",
+    "price": 68948.84,
+    "stock": 27,
+    "rating": 3.9,
+    "image": [
+      {
+        "public_id": "product_169",
+        "url": "https://picsum.photos/seed/indianproduct169/500/500"
+      }
+    ],
+    "category": "Educational Toys",
+    "seller": "patanjali",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806942",
+    "updatedAt": "2026-03-04T17:52:42.806943"
+  },
+  {
+    "name": "boat durable product 170",
+    "description": "This is a durable automotive product specially curated for the Indian market.",
+    "price": 49134.08,
+    "stock": 174,
+    "rating": 4.6,
+    "image": [
+      {
+        "public_id": "product_170",
+        "url": "https://picsum.photos/seed/indianproduct170/500/500"
+      }
+    ],
+    "category": "Automotive",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806950",
+    "updatedAt": "2026-03-04T17:52:42.806951"
+  },
+  {
+    "name": "wildcraft advanced product 171",
+    "description": "This is a advanced pet supplies product specially curated for the Indian market.",
+    "price": 12528.26,
+    "stock": 182,
+    "rating": 4.9,
+    "image": [
+      {
+        "public_id": "product_171",
+        "url": "https://picsum.photos/seed/indianproduct171/500/500"
+      }
+    ],
+    "category": "Pet Supplies",
+    "seller": "wildcraft",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806957",
+    "updatedAt": "2026-03-04T17:52:42.806959"
+  },
+  {
+    "name": "bajaj durable product 172",
+    "description": "This is a durable groceries & food product specially curated for the Indian market.",
+    "price": 67093.33,
+    "stock": 100,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_172",
+        "url": "https://picsum.photos/seed/indianproduct172/500/500"
+      }
+    ],
+    "category": "Groceries & Food",
+    "seller": "bajaj",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806965",
+    "updatedAt": "2026-03-04T17:52:42.806978"
+  },
+  {
+    "name": "hero compact product 173",
+    "description": "This is a compact arts & crafts product specially curated for the Indian market.",
+    "price": 18398.76,
+    "stock": 144,
+    "rating": 4.3,
+    "image": [
+      {
+        "public_id": "product_173",
+        "url": "https://picsum.photos/seed/indianproduct173/500/500"
+      }
+    ],
+    "category": "Arts & Crafts",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806984",
+    "updatedAt": "2026-03-04T17:52:42.806985"
+  },
+  {
+    "name": "tata premium product 174",
+    "description": "This is a premium industrial supplies product specially curated for the Indian market.",
+    "price": 11741.01,
+    "stock": 136,
+    "rating": 3.9,
+    "image": [
+      {
+        "public_id": "product_174",
+        "url": "https://picsum.photos/seed/indianproduct174/500/500"
+      }
+    ],
+    "category": "Industrial Supplies",
+    "seller": "tata",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806992",
+    "updatedAt": "2026-03-04T17:52:42.806993"
+  },
+  {
+    "name": "khadi india classic product 175",
+    "description": "This is a classic business & industrial product specially curated for the Indian market.",
+    "price": 5311.26,
+    "stock": 34,
+    "rating": 4.1,
+    "image": [
+      {
+        "public_id": "product_175",
+        "url": "https://picsum.photos/seed/indianproduct175/500/500"
+      }
+    ],
+    "category": "Business & Industrial",
+    "seller": "khadi india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.806999",
+    "updatedAt": "2026-03-04T17:52:42.807000"
+  },
+  {
+    "name": "mi smart product 176",
+    "description": "This is a smart other product specially curated for the Indian market.",
+    "price": 25760.0,
+    "stock": 35,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_176",
+        "url": "https://picsum.photos/seed/indianproduct176/500/500"
+      }
+    ],
+    "category": "Other",
+    "seller": "mi",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807009",
+    "updatedAt": "2026-03-04T17:52:42.807010"
+  },
+  {
+    "name": "reliance premium product 177",
+    "description": "This is a premium electronics product specially curated for the Indian market.",
+    "price": 70817.39,
+    "stock": 200,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_177",
+        "url": "https://picsum.photos/seed/indianproduct177/500/500"
+      }
+    ],
+    "category": "Electronics",
+    "seller": "reliance",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807016",
+    "updatedAt": "2026-03-04T17:52:42.807017"
+  },
+  {
+    "name": "apple india portable product 178",
+    "description": "This is a portable mobile phones product specially curated for the Indian market.",
+    "price": 79281.77,
+    "stock": 106,
+    "rating": 4.4,
+    "image": [
+      {
+        "public_id": "product_178",
+        "url": "https://picsum.photos/seed/indianproduct178/500/500"
+      }
+    ],
+    "category": "Mobile Phones",
+    "seller": "apple india",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807023",
+    "updatedAt": "2026-03-04T17:52:42.807024"
+  },
+  {
+    "name": "boat eco product 179",
+    "description": "This is a eco computers & tablets product specially curated for the Indian market.",
+    "price": 5652.67,
+    "stock": 14,
+    "rating": 3.9,
+    "image": [
+      {
+        "public_id": "product_179",
+        "url": "https://picsum.photos/seed/indianproduct179/500/500"
+      }
+    ],
+    "category": "Computers & Tablets",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807030",
+    "updatedAt": "2026-03-04T17:52:42.807031"
+  },
+  {
+    "name": "mi classic product 180",
+    "description": "This is a classic cameras product specially curated for the Indian market.",
+    "price": 78149.3,
+    "stock": 65,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_180",
+        "url": "https://picsum.photos/seed/indianproduct180/500/500"
+      }
+    ],
+    "category": "Cameras",
+    "seller": "mi",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807037",
+    "updatedAt": "2026-03-04T17:52:42.807038"
+  },
+  {
+    "name": "himalaya durable product 181",
+    "description": "This is a durable audio & headphones product specially curated for the Indian market.",
+    "price": 4521.32,
+    "stock": 105,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_181",
+        "url": "https://picsum.photos/seed/indianproduct181/500/500"
+      }
+    ],
+    "category": "Audio & Headphones",
+    "seller": "himalaya",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807045",
+    "updatedAt": "2026-03-04T17:52:42.807046"
+  },
+  {
+    "name": "tata durable product 182",
+    "description": "This is a durable wearable technology product specially curated for the Indian market.",
+    "price": 16854.09,
+    "stock": 181,
+    "rating": 3.5,
+    "image": [
+      {
+        "public_id": "product_182",
+        "url": "https://picsum.photos/seed/indianproduct182/500/500"
+      }
+    ],
+    "category": "Wearable Technology",
+    "seller": "tata",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807051",
+    "updatedAt": "2026-03-04T17:52:42.807053"
+  },
+  {
+    "name": "tata wireless product 183",
+    "description": "This is a wireless video games & consoles product specially curated for the Indian market.",
+    "price": 47329.85,
+    "stock": 57,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_183",
+        "url": "https://picsum.photos/seed/indianproduct183/500/500"
+      }
+    ],
+    "category": "Video Games & Consoles",
+    "seller": "tata",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807059",
+    "updatedAt": "2026-03-04T17:52:42.807060"
+  },
+  {
+    "name": "himalaya smart product 184",
+    "description": "This is a smart clothing product specially curated for the Indian market.",
+    "price": 3972.55,
+    "stock": 181,
+    "rating": 4.8,
+    "image": [
+      {
+        "public_id": "product_184",
+        "url": "https://picsum.photos/seed/indianproduct184/500/500"
+      }
+    ],
+    "category": "Clothing",
+    "seller": "himalaya",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807066",
+    "updatedAt": "2026-03-04T17:52:42.807068"
+  },
+  {
+    "name": "tata durable product 185",
+    "description": "This is a durable men's fashion product specially curated for the Indian market.",
+    "price": 11977.41,
+    "stock": 121,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_185",
+        "url": "https://picsum.photos/seed/indianproduct185/500/500"
+      }
+    ],
+    "category": "Men's Fashion",
+    "seller": "tata",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807073",
+    "updatedAt": "2026-03-04T17:52:42.807075"
+  },
+  {
+    "name": "boat advanced product 186",
+    "description": "This is a advanced women's fashion product specially curated for the Indian market.",
+    "price": 69248.1,
+    "stock": 111,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_186",
+        "url": "https://picsum.photos/seed/indianproduct186/500/500"
+      }
+    ],
+    "category": "Women's Fashion",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807085",
+    "updatedAt": "2026-03-04T17:52:42.807087"
+  },
+  {
+    "name": "fabindia durable product 187",
+    "description": "This is a durable kids' fashion product specially curated for the Indian market.",
+    "price": 45552.62,
+    "stock": 174,
+    "rating": 4.6,
+    "image": [
+      {
+        "public_id": "product_187",
+        "url": "https://picsum.photos/seed/indianproduct187/500/500"
+      }
+    ],
+    "category": "Kids' Fashion",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807093",
+    "updatedAt": "2026-03-04T17:52:42.807094"
+  },
+  {
+    "name": "hero durable product 188",
+    "description": "This is a durable footwear product specially curated for the Indian market.",
+    "price": 69979.5,
+    "stock": 135,
+    "rating": 4.1,
+    "image": [
+      {
+        "public_id": "product_188",
+        "url": "https://picsum.photos/seed/indianproduct188/500/500"
+      }
+    ],
+    "category": "Footwear",
+    "seller": "hero",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807102",
+    "updatedAt": "2026-03-04T17:52:42.807104"
+  },
+  {
+    "name": "bajaj advanced product 189",
+    "description": "This is a advanced accessories product specially curated for the Indian market.",
+    "price": 91810.1,
+    "stock": 33,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_189",
+        "url": "https://picsum.photos/seed/indianproduct189/500/500"
+      }
+    ],
+    "category": "Accessories",
+    "seller": "bajaj",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807112",
+    "updatedAt": "2026-03-04T17:52:42.807113"
+  },
+  {
+    "name": "boat compact product 190",
+    "description": "This is a compact jewelry product specially curated for the Indian market.",
+    "price": 47901.31,
+    "stock": 37,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_190",
+        "url": "https://picsum.photos/seed/indianproduct190/500/500"
+      }
+    ],
+    "category": "Jewelry",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807122",
+    "updatedAt": "2026-03-04T17:52:42.807123"
+  },
+  {
+    "name": "bajaj durable product 191",
+    "description": "This is a durable home & kitchen product specially curated for the Indian market.",
+    "price": 1449.13,
+    "stock": 44,
+    "rating": 4.5,
+    "image": [
+      {
+        "public_id": "product_191",
+        "url": "https://picsum.photos/seed/indianproduct191/500/500"
+      }
+    ],
+    "category": "Home & Kitchen",
+    "seller": "bajaj",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807129",
+    "updatedAt": "2026-03-04T17:52:42.807130"
+  },
+  {
+    "name": "reliance smart product 192",
+    "description": "This is a smart furniture product specially curated for the Indian market.",
+    "price": 8533.56,
+    "stock": 56,
+    "rating": 4.2,
+    "image": [
+      {
+        "public_id": "product_192",
+        "url": "https://picsum.photos/seed/indianproduct192/500/500"
+      }
+    ],
+    "category": "Furniture",
+    "seller": "reliance",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807136",
+    "updatedAt": "2026-03-04T17:52:42.807137"
+  },
+  {
+    "name": "tata advanced product 193",
+    "description": "This is a advanced home decor product specially curated for the Indian market.",
+    "price": 13881.19,
+    "stock": 28,
+    "rating": 3.6,
+    "image": [
+      {
+        "public_id": "product_193",
+        "url": "https://picsum.photos/seed/indianproduct193/500/500"
+      }
+    ],
+    "category": "Home Decor",
+    "seller": "tata",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807143",
+    "updatedAt": "2026-03-04T17:52:42.807144"
+  },
+  {
+    "name": "tata wireless product 194",
+    "description": "This is a wireless garden & outdoor product specially curated for the Indian market.",
+    "price": 51730.56,
+    "stock": 169,
+    "rating": 3.6,
+    "image": [
+      {
+        "public_id": "product_194",
+        "url": "https://picsum.photos/seed/indianproduct194/500/500"
+      }
+    ],
+    "category": "Garden & Outdoor",
+    "seller": "tata",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807151",
+    "updatedAt": "2026-03-04T17:52:42.807152"
+  },
+  {
+    "name": "patanjali budget product 195",
+    "description": "This is a budget tools & hardware product specially curated for the Indian market.",
+    "price": 52058.34,
+    "stock": 159,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_195",
+        "url": "https://picsum.photos/seed/indianproduct195/500/500"
+      }
+    ],
+    "category": "Tools & Hardware",
+    "seller": "patanjali",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807158",
+    "updatedAt": "2026-03-04T17:52:42.807160"
+  },
+  {
+    "name": "boat premium product 196",
+    "description": "This is a premium beauty & personal care product specially curated for the Indian market.",
+    "price": 73494.55,
+    "stock": 57,
+    "rating": 3.7,
+    "image": [
+      {
+        "public_id": "product_196",
+        "url": "https://picsum.photos/seed/indianproduct196/500/500"
+      }
+    ],
+    "category": "Beauty & Personal Care",
+    "seller": "boat",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807165",
+    "updatedAt": "2026-03-04T17:52:42.807166"
+  },
+  {
+    "name": "mahindra compact product 197",
+    "description": "This is a compact skincare product specially curated for the Indian market.",
+    "price": 88675.75,
+    "stock": 162,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_197",
+        "url": "https://picsum.photos/seed/indianproduct197/500/500"
+      }
+    ],
+    "category": "Skincare",
+    "seller": "mahindra",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807175",
+    "updatedAt": "2026-03-04T17:52:42.807176"
+  },
+  {
+    "name": "realme smart product 198",
+    "description": "This is a smart makeup product specially curated for the Indian market.",
+    "price": 38105.36,
+    "stock": 89,
+    "rating": 4.7,
+    "image": [
+      {
+        "public_id": "product_198",
+        "url": "https://picsum.photos/seed/indianproduct198/500/500"
+      }
+    ],
+    "category": "Makeup",
+    "seller": "realme",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807185",
+    "updatedAt": "2026-03-04T17:52:42.807187"
+  },
+  {
+    "name": "fabindia wireless product 199",
+    "description": "This is a wireless hair care product specially curated for the Indian market.",
+    "price": 8921.58,
+    "stock": 16,
+    "rating": 4.0,
+    "image": [
+      {
+        "public_id": "product_199",
+        "url": "https://picsum.photos/seed/indianproduct199/500/500"
+      }
+    ],
+    "category": "Hair Care",
+    "seller": "fabindia",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807193",
+    "updatedAt": "2026-03-04T17:52:42.807194"
+  },
+  {
+    "name": "tata classic product 200",
+    "description": "This is a classic fragrance product specially curated for the Indian market.",
+    "price": 20269.89,
+    "stock": 77,
+    "rating": 4.6,
+    "image": [
+      {
+        "public_id": "product_200",
+        "url": "https://picsum.photos/seed/indianproduct200/500/500"
+      }
+    ],
+    "category": "Fragrance",
+    "seller": "tata",
+    "numberOfReviews": 0,
+    "reviews": [],
+    "createdAt": "2026-03-04T17:52:42.807204",
+    "updatedAt": "2026-03-04T17:52:42.807207"
+  }
+]
