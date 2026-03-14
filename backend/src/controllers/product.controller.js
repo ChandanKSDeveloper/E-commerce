@@ -1,6 +1,7 @@
 import Product from "../models/product.model.js";
 import asyncHandler from "../utils/asyncHandler.js";
 import ErrorHandler from "../utils/ErrorHandler.js";
+import ApiFeatures from "../utils/ApiFeatures.js";
 
 /**
  * @desc    Create new product
@@ -22,17 +23,24 @@ const newProduct = asyncHandler(async (req, res, next) => {
 /**
  * @desc    Get all products
  * @route   GET /api/v1/product
+ * @query   ?keyword=value
  * @access  Public
  * 
  * PROFESSIONAL TIP: Always include the count when returning lists of items.
  */
 const getProducts = asyncHandler(async (req, res, next) => {
-    const products = await Product.find();
+
+    const resultPerPage = 10;
+    const productsCount = await Product.countDocuments(); // total number of products in database so that we can calculate total number of pages on frontend
+
+    const apiFeatures = new ApiFeatures(Product.find(), req.query).search().filter().pagination(resultPerPage);
+    const products = await apiFeatures.query; // execute the query
 
     res.status(200).json({
         success: true,
         count: products.length,
-        products
+        products,
+        productsCount
     });
 });
 

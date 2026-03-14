@@ -1,4 +1,5 @@
 import express from 'express'
+import qs from 'qs'
 
 // import routes
 import testRoutes from "./routes/test.routes.js"
@@ -12,6 +13,8 @@ const app = express();
 app.use(express.json()); // to parse json data
 app.use(express.urlencoded({ extended: true })); // to parse url encoded data
 
+// query parser
+app.set("query parser", (str) => qs.parse(str, { allowDots: true }));
 
 // Routes
 app.use("/api/v1/test", testRoutes);
