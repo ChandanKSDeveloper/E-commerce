@@ -1,10 +1,12 @@
 import express from 'express'
 import qs from 'qs'
+import cookieParser from 'cookie-parser'
 
 // import routes
 import testRoutes from "./routes/test.routes.js"
 import productRoutes from "./routes/product.route.js"
 import errorMiddleware from "./middlewares/error.js"
+import authRoutes from "./routes/auth.route.js"
 
 // init
 const app = express();
@@ -15,10 +17,12 @@ app.use(express.urlencoded({ extended: true })); // to parse url encoded data
 
 // query parser
 app.set("query parser", (str) => qs.parse(str, { allowDots: true }));
+app.use(cookieParser());
 
 // Routes
 app.use("/api/v1/test", testRoutes);
 app.use("/api/v1", productRoutes);
+app.use("/api/v1", authRoutes);
 
 // Error Middleware
 app.use(errorMiddleware);
