@@ -12,6 +12,10 @@ import ApiFeatures from "../utils/ApiFeatures.js";
  * Errors are automatically caught and passed to the global error middleware.
  */
 const newProduct = asyncHandler(async (req, res, next) => {
+
+    // req.user.id is available because of the auth middleware (user.model.js in jwt.sign({ id: this._id }) that runs before this controller
+    req.body.user = req.user.id; // Attach the authenticated user's ID to the product data, got from auth middleware so that we can track which admin created the product
+
     const product = await Product.create(req.body);
 
     res.status(201).json({
@@ -108,10 +112,150 @@ const deleteProduct = asyncHandler(async (req, res, next) => {
     });
 });
 
+
+// Product review
+/**
+ * @desc    Create new Product review
+ * @route   POST /api/v1/review
+ * @access  Public
+ */
+
+const createProductReview = asyncHandler(async (req, res, next) => {
+    const { rating, comment, productId } = req.body;
+
+    const review = {
+        user: req.user?._id,
+        name: req.user?.name,
+        rating: Number(rating),
+        comment
+    };
+
+    console.log(review)
+
+    const product = await Product.findById(productId);
+    console.log("product founded", product)
+
+    if (product) {
+        const alreadyReviewed = product.reviews.find(
+            r => r.user.toString() === req.user?._id.toString()
+        );
+
+        if (alreadyReviewed) {
+            product.reviews.forEach(review => {
+                if (review.user.toString() === req.user?._id.toString()) {
+                    review.rating = rating;
+                    review.comment = comment;
+                }
+            });
+        } else {
+            product.reviews.push(review);
+            product.numberOfReviews = product.reviews.length;
+        }
+
+        // Calculate the new average rating
+        let sum = 0;
+        product.reviews.forEach(review => {
+            sum += review.rating;
+        });
+        product.rating = sum / product.numberOfReviews;
+
+        await product.save({ validateBeforeSave: false });
+        res.status(200).json({
+            success: true,
+            message: "Review added successfully"
+        });
+    } else {
+        return next(new ErrorHandler("Product not found", 404));
+    }
+});
+
+// get all reviews
+/**
+ * @desc    Get all reviews
+ * @route   GET /api/v1/reviews
+ * @access  Public
+ */
+
+const getProductReviews = asyncHandler(async (req, res, next) => {
+    const product = await Product.findById(req.query.id);
+
+    if (!product) {
+        return next(new ErrorHandler("Product not found", 404));
+    }
+
+    res.status(200).json({
+        success: true,
+        message: "Review fetched successfully",
+        reviews: product.reviews
+    });
+});
+
+// Delete review
+/**
+ * @desc    Delete review
+ * @route   DELETE /api/v1/review
+ * @access  Public
+ */
+
+const deleteProductReview = asyncHandler(async (req, res, next) => {
+    console.log("delete product review hit")
+
+    const productId = req.query.productId;
+    const reviewId = req.query.id;
+
+    const product = await Product.findById(productId);
+    if (!product) {
+        return next(new ErrorHandler("Product not found", 404));
+    }
+
+    console.log("Product ID:", productId);
+    console.log("Review ID to delete:", reviewId);
+
+    const reviews = product.reviews.filter(r => r._id.toString() !== reviewId.toString());
+
+    console.log("reviews after filter:", reviews);
+
+    if (reviews.length === product.reviews.length) {
+        return next(new ErrorHandler("Review not found", 404));
+    }
+    console.log("reviews length:", reviews.length);
+
+    const numberOfReviews = reviews.length;
+
+    // Calculate rating - handle empty reviews array
+    let rating = 0;
+    if (numberOfReviews > 0) {
+        rating = reviews.reduce((acc, item) => item.rating + acc, 0) / numberOfReviews;
+    }
+
+    console.log("New rating:", rating);
+    console.log("New numberOfReviews:", numberOfReviews);
+
+    const updatedProduct = await Product.findByIdAndUpdate(productId, {
+        reviews,
+        numberOfReviews,
+        rating
+    }, {
+        returnDocument: 'after',
+        runValidators: true
+    });
+
+    res.status(200).json({
+        success: true,
+        message: "Review deleted successfully",
+        reviews: updatedProduct.reviews,
+        numberOfReviews: updatedProduct.numberOfReviews,
+        rating: updatedProduct.rating
+    });
+});
+
 export {
     newProduct,
     getProducts,
     getProductById,
     updateProduct,
-    deleteProduct
+    deleteProduct,
+    createProductReview,
+    getProductReviews,
+    deleteProductReview
 };

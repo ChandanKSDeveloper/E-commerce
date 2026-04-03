@@ -1,6 +1,15 @@
 import { Router } from "express";
-import { newProduct, getProducts, getProductById, updateProduct, deleteProduct } from "../controllers/product.controller.js";
-import { isAuthenticatedUser } from "../middlewares/auth.middleware.js";
+import {
+    newProduct, 
+    getProducts, 
+    getProductById, 
+    updateProduct, 
+    deleteProduct,
+    createProductReview,
+    getProductReviews,
+    deleteProductReview
+} from "../controllers/product.controller.js";
+import { isAuthenticatedUser, authorizeRoles } from "../middlewares/auth.middleware.js";
  
 const router = Router();
 
@@ -11,13 +20,18 @@ router.get("/test", (req, res) => res.json({ message: "Product route is active" 
 router.get("/products", getProducts);
 
 // New product
-router.post("/admin/product/new", isAuthenticatedUser, newProduct);
+router.post("/admin/product/new", isAuthenticatedUser, authorizeRoles("admin"), newProduct);
 
 // Single product (Get, Update, Delete)
 router.route("/product/:id")
     .get(getProductById)
 router.route("/admin/product/:id")
-    .put(isAuthenticatedUser, updateProduct)
-    .delete(isAuthenticatedUser, deleteProduct);
+    .put(isAuthenticatedUser, authorizeRoles("admin"), updateProduct)
+    .delete(isAuthenticatedUser, authorizeRoles("admin"), deleteProduct);
+
+// Review
+router.route("/review").put(isAuthenticatedUser, createProductReview);
+router.route("/reviews").get(getProductReviews);
+router.route("/reviews").delete(isAuthenticatedUser, deleteProductReview);
 
 export default router;  

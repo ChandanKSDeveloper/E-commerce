@@ -25,6 +25,11 @@ const errorMiddleware = (err, req, res, next) => {
         err.statusCode = 404;
     }
 
+    if(err.name === "TokenExpiredError"){
+        err.message = `JSON web Token is Invalid. Try again`;
+        err.statusCode = 404;
+    }
+
     res.status(err.statusCode).json({
         success: false,
         message: err.message,
