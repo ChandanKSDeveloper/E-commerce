@@ -35,16 +35,23 @@ const newProduct = asyncHandler(async (req, res, next) => {
 const getProducts = asyncHandler(async (req, res, next) => {
 
     const resultPerPage = 10;
+    const page = parseInt(req.query.page) || 1;
+
     const productsCount = await Product.countDocuments(); // total number of products in database so that we can calculate total number of pages on frontend
 
     const apiFeatures = new ApiFeatures(Product.find(), req.query).search().filter().pagination(resultPerPage);
     const products = await apiFeatures.query; // execute the query
 
+    const totalPages = Math.ceil(productsCount / resultPerPage);
+
     res.status(200).json({
         success: true,
         count: products.length,
         products,
-        productsCount
+        productsCount,
+        resultPerPage,
+        totalPages,
+        currentPage : page
     });
 });
 

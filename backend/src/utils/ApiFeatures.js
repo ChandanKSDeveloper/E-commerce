@@ -62,7 +62,7 @@ class ApiFeatures {
         // Copy query object to avoid mutating original
         const queryCopy = {...this.queryStr};
 
-        console.log(queryCopy);
+        // console.log(queryCopy);
         // console.log(this.query);
 
         // Remove fields that are not related to filtering

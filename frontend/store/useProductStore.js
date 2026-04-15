@@ -36,6 +36,13 @@ const useProductStore = create((set) => ({
     message: null,
     count: 0,
     productsCount: 0,
+    currentPage: 1,
+    resultPerPage: 10,
+    totalPages: 0,
+    filteredProductsCount: 0,
+    isChangingPage: false,
+
+    
 
     clearError: () => set({ error: null }),
     clearMessage: () => set({ message: null }),
@@ -43,16 +50,27 @@ const useProductStore = create((set) => ({
     setProduct: (product) => set({ product }),
 
     getAllProducts: async (params = {}) => {
-        set({ loading: true, error: null });
+        // Determine if this is a page change
+        const isPageChange = params.page > 1;
+
+        set({ loading: true, isPageChange, error: null });
 
         try {
             const { data } = await api.get("/products", { params });
 
+            // calculate total pages
+            const totalPages = Math.ceil(data.productsCount / data.resultPerPage);
+
+            const currentPage = parseInt(params.page) || 1;
             set({
                 products: Array.isArray(data.products) ? data.products : [],
                 count: data.count ?? 0,
                 productsCount: data.productsCount ?? 0,
+                currentPage: currentPage,
+                resultPerPage: data.resultPerPage ?? 10,
+                totalPages: totalPages,
                 loading: false,
+                isChangingPage: false,
             });
 
             return data;
@@ -61,6 +79,13 @@ const useProductStore = create((set) => ({
                 products: [],
                 loading: false,
                 error: getErrorMessage(error, "Failed to fetch products"),
+                count: 0,
+                productsCount: 0,
+                currentPage: 1,
+                resultPerPage: 10,
+                totalPages: 0,
+                filteredProductsCount: 0,
+                isChangingPage : false
             });
 
             return null;
