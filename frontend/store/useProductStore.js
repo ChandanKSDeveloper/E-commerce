@@ -7,7 +7,7 @@ import axios from "axios";
 //   - Development : frontend/.env              → http://localhost:4000/api/v1
 //   - Production  : frontend/.env.production   → https://your-production-api.com/api/v1
 const SERVER_URLS = {
-    dev:  "http://localhost:4000/api/v1",
+    dev: "http://localhost:4000/api/v1",
     prod: "https://your-production-api.com/api/v1",
 };
 
@@ -42,7 +42,7 @@ const useProductStore = create((set) => ({
     filteredProductsCount: 0,
     isChangingPage: false,
 
-    
+
 
     clearError: () => set({ error: null }),
     clearMessage: () => set({ message: null }),
@@ -56,6 +56,18 @@ const useProductStore = create((set) => ({
         set({ loading: true, isPageChange, error: null });
 
         try {
+            const queryParams = new URLSearchParams();
+
+            if (params.keyword) queryParams.append('keyword', params.keyword)
+            if (params.page) queryParams.append('page', params.page)
+            if (params.limit) queryParams.append('limit', params.limit)
+            if (params.keyword) queryParams.append('keyword', params.keyword)
+
+            if (params.category) queryParams.append('category', params.category);
+            if (params.priceMin) queryParams.append('priceMin', params.priceMin);
+            if (params.priceMax) queryParams.append('priceMax', params.priceMax);
+            if (params.rating) queryParams.append('rating', params.rating);
+
             const { data } = await api.get("/products", { params });
 
             // calculate total pages
@@ -85,7 +97,7 @@ const useProductStore = create((set) => ({
                 resultPerPage: 10,
                 totalPages: 0,
                 filteredProductsCount: 0,
-                isChangingPage : false
+                isChangingPage: false
             });
 
             return null;

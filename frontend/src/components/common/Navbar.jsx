@@ -1,28 +1,27 @@
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ShoppingCart, User, Search, Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [debouncedSearch, setDebouncedSearch] = useState("");
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
-  // Debounce search (better performance)
+  // Clear search when navigating away from search page
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setDebouncedSearch(searchTerm);
-    }, 400);
-
-    return () => clearTimeout(timer);
-  }, [searchTerm]);
+    if (!location.pathname.includes('/search')) {
+      setSearchTerm("");
+    }
+  }, [location]);
 
   const handleSearch = (e) => {
     e.preventDefault();
     if (!searchTerm.trim()) return;
-    navigate(`/search?q=${searchTerm}`);
+    navigate(`/search?q=${encodeURIComponent(searchTerm)}`);
     setIsMenuOpen(false);
   };
 
