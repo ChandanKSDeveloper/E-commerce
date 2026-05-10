@@ -52,6 +52,7 @@ connectDB()
     process.exit(1);
   });
 
+
 process.on("unhandledRejection", err => {
   console.log(`ERROR : ${err.message}`);
   console.log("Shutting down the server due to unhandled Promise Rejection");

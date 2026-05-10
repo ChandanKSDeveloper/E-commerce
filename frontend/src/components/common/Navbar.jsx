@@ -2,27 +2,160 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ShoppingCart, User, Search, Menu, X } from "lucide-react";
+import { ShoppingCart, User, Search, Menu, X, LogOut, Loader2 } from "lucide-react";
+import useUserStore from "../../../store/useUserStore";
 
 export default function Navbar() {
   const [searchTerm, setSearchTerm] = useState("");
   
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+
+  const { isAuthenticated, user, loading, authChecked, logoutUser } = useUserStore();
 
   // Clear search when navigating away from search page
   useEffect(() => {
     if (!location.pathname.includes('/search')) {
       setSearchTerm("");
     }
+    // Close menus on route change
+    setIsMenuOpen(false);
+    setIsProfileMenuOpen(false);
   }, [location]);
+
+  // Close profile dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (isProfileMenuOpen && !e.target.closest('.profile-dropdown')) {
+        setIsProfileMenuOpen(false);
+      }
+    };
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, [isProfileMenuOpen]);
 
   const handleSearch = (e) => {
     e.preventDefault();
     if (!searchTerm.trim()) return;
     navigate(`/search?q=${encodeURIComponent(searchTerm)}`);
     setIsMenuOpen(false);
+  };
+
+  const handleLogout = async () => {
+    setIsProfileMenuOpen(false);
+    await logoutUser();
+    navigate('/');
+  };
+
+  // Render user button based on auth state
+  const renderUserButton = ({ mobile = false } = {}) => {
+    // Still checking auth - show loading
+    if (!authChecked || loading) {
+      if (mobile) {
+        return (
+          <Button variant="ghost" className="w-full justify-start" disabled>
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Loading...
+          </Button>
+        );
+      }
+      return (
+        <Button variant="ghost" size="icon" className="sm:px-3" disabled>
+          <Loader2 className="h-5 w-5 animate-spin" />
+        </Button>
+      );
+    }
+
+    // Authenticated - show profile menu
+    if (isAuthenticated && user) {
+      if (mobile) {
+        return (
+          <>
+            <Link to="/profile" onClick={() => setIsMenuOpen(false)}>
+              <Button variant="ghost" className="w-full justify-start">
+                <User className="mr-2 h-4 w-4" /> Profile
+              </Button>
+            </Link>
+            <Button
+              variant="ghost"
+              className="w-full justify-start text-red-500 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-950"
+              onClick={handleLogout}
+            >
+              <LogOut className="mr-2 h-4 w-4" /> Logout
+            </Button>
+          </>
+        );
+      }
+
+      return (
+        <div className="relative profile-dropdown">
+          <Button
+            variant="ghost"
+            size="icon"
+            className="sm:px-3 rounded-full"
+            onClick={(e) => {
+              e.stopPropagation();
+              setIsProfileMenuOpen(!isProfileMenuOpen);
+            }}
+          >
+            {user.avatar?.url ? (
+              <img
+                src={user.avatar.url}
+                alt={user.name}
+                className="h-7 w-7 rounded-full object-cover ring-2 ring-primary/20"
+              />
+            ) : (
+              <div className="h-7 w-7 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-semibold">
+                {user.name?.charAt(0)?.toUpperCase() || 'U'}
+              </div>
+            )}
+          </Button>
+
+          {/* Dropdown Menu */}
+          {isProfileMenuOpen && (
+            <div className="absolute right-0 top-full mt-2 w-56 rounded-lg border bg-background shadow-lg py-1 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+              <div className="px-4 py-3 border-b">
+                <p className="text-sm font-medium truncate">{user.name}</p>
+                <p className="text-xs text-muted-foreground truncate">{user.email}</p>
+              </div>
+              <Link
+                to="/profile"
+                className="flex items-center gap-2 px-4 py-2.5 text-sm hover:bg-accent transition-colors"
+                onClick={() => setIsProfileMenuOpen(false)}
+              >
+                <User className="h-4 w-4" /> My Profile
+              </Link>
+              <button
+                onClick={handleLogout}
+                className="flex items-center gap-2 w-full px-4 py-2.5 text-sm text-red-500 hover:bg-red-50 dark:hover:bg-red-950 transition-colors"
+              >
+                <LogOut className="h-4 w-4" /> Logout
+              </button>
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    // Not authenticated - show login button
+    if (mobile) {
+      return (
+        <Link to="/login" onClick={() => setIsMenuOpen(false)}>
+          <Button variant="ghost" className="w-full justify-start">
+            <User className="mr-2 h-4 w-4" /> Login
+          </Button>
+        </Link>
+      );
+    }
+
+    return (
+      <Link to="/login">
+        <Button variant="ghost" size="icon" className="sm:px-3">
+          <User className="h-5 w-5" />
+        </Button>
+      </Link>
+    );
   };
 
   return (
@@ -67,11 +200,7 @@ export default function Navbar() {
 
         {/* Right Actions */}
         <div className="hidden md:flex items-center gap-4">
-          <Link to="/login">
-            <Button variant="ghost" size="icon" className="sm:px-3">
-              <User className="h-5 w-5" />
-            </Button>
-          </Link>
+          {renderUserButton()}
 
           <Link to="/cart" className="relative">
             <Button variant="outline" size="icon" className="sm:px-3">
@@ -101,11 +230,7 @@ export default function Navbar() {
           </form>
 
           <div className="flex flex-col gap-2">
-            <Link to="/login" onClick={() => setIsMenuOpen(false)}>
-              <Button variant="ghost" className="w-full justify-start">
-                <User className="mr-2 h-4 w-4" /> Login
-              </Button>
-            </Link>
+            {renderUserButton({ mobile: true })}
 
             <Link to="/cart" onClick={() => setIsMenuOpen(false)}>
               <Button variant="ghost" className="w-full justify-start">

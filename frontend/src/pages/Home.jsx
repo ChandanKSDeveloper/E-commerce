@@ -5,7 +5,7 @@ import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
 
 import MetaData from "@/components/common/Metadata";
-import useProductStore from "../../../store/useProductStore";
+import useProductStore from "../../store/useProductStore";
 import { ProductGridSkeleton, HeroSkeleton } from "@/components/loader-skeleton";
 import ErrorPage from "@/components/common/Error";
 import Pagination from "@/components/common/Pagination";
@@ -14,10 +14,10 @@ import PaginationInfo from "@/components/PaginationInfo";
 export default function Home() {
     const navigate = useNavigate();
     const [searchParams, setSearchParams] = useSearchParams();
-    const { 
-        products, 
-        loading, 
-        error, 
+    const {
+        products,
+        loading,
+        error,
         getAllProducts,
         currentPage,
         totalPages,
@@ -48,7 +48,7 @@ export default function Home() {
     const handleAddToCart = useCallback((e, product) => {
         e.preventDefault(); // Prevent Link navigation
         e.stopPropagation();
-        
+
         toast.success(`${product.name} added to cart`, {
             description: `Quantity: 1`,
             action: {
@@ -83,7 +83,7 @@ export default function Home() {
                         <p className="text-sm md:text-lg mb-4">
                             Discover amazing products at unbeatable prices.
                         </p>
-                        <Button 
+                        <Button
                             className="bg-white text-black hover:bg-gray-200"
                             onClick={() => {
                                 const productsSection = document.getElementById('products-section');
@@ -102,7 +102,7 @@ export default function Home() {
                             Featured Products
                         </h2>
                         {!loading && productsCount > 0 && (
-                            <PaginationInfo 
+                            <PaginationInfo
                                 currentPage={currentPage}
                                 resultPerPage={resultPerPage}
                                 productsCount={productsCount}
@@ -158,14 +158,14 @@ export default function Home() {
                                         </p>
 
                                         {product.stock > 0 ? (
-                                            <Button 
+                                            <Button
                                                 className="w-full text-sm"
                                                 onClick={(e) => handleAddToCart(e, product)}
                                             >
                                                 Add to Cart
                                             </Button>
                                         ) : (
-                                            <Button 
+                                            <Button
                                                 className="w-full text-sm"
                                                 variant="outline"
                                                 disabled

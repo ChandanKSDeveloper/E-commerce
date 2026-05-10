@@ -52,7 +52,7 @@ app.use(cors({
 // Routes
 app.use("/api/v1/test", testRoutes);
 app.use("/api/v1", productRoutes);
-app.use("/api/v1", authRoutes);
+app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1", adminRoutes);
 app.use("/api/v1", orderRoutes);
 
