@@ -20,6 +20,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Skeleton } from "@/components/ui/skeleton";
 import MetaData from "@/components/common/Metadata";
 import useProductStore from '../../store/useProductStore';
+import useCartStore from '../../store/useCartStore';
 import { useEffect, useState } from "react";
 import ErrorPage from "@/components/common/Error";
 
@@ -27,6 +28,7 @@ const ProductPage = () => {
     const { id } = useParams(); // Fixed: extract id properly
     const navigate = useNavigate();
     const { product, loading, error, getProductById } = useProductStore();
+    const { addToCart } = useCartStore();
 
     const [quantity, setQuantity] = useState(1);
     const [selectedImage, setSelectedImage] = useState(0);
@@ -57,6 +59,19 @@ const ProductPage = () => {
     }
 
     const handleAddToCart = () => {
+        const cartItem = {
+            product: product._id,
+            name: product.name,
+            price: product.price,
+            image: product.image?.[0]?.url || "",
+            stock: product.stock,
+        };
+
+        // Add to cart with selected quantity
+        for (let i = 0; i < quantity; i++) {
+            addToCart(cartItem);
+        }
+
         toast.success(`${quantity} × ${product?.name} added to your cart`, {
             description: "Continue shopping or proceed to checkout",
             duration: 3000,
@@ -68,14 +83,21 @@ const ProductPage = () => {
     };
 
     const handleBuyNow = () => {
-        toast.loading("Processing...", {
-            description: "Redirecting to checkout",
-        });
-        setTimeout(() => {
-            toast.dismiss();
-            toast.success("Redirecting to checkout page");
-            // navigate("/checkout");
-        }, 1500);
+        const cartItem = {
+            product: product._id,
+            name: product.name,
+            price: product.price,
+            image: product.image?.[0]?.url || "",
+            stock: product.stock,
+        };
+
+        // Add to cart with selected quantity
+        for (let i = 0; i < quantity; i++) {
+            addToCart(cartItem);
+        }
+
+        toast.success(`${quantity} × ${product?.name} added — redirecting to checkout`);
+        navigate("/shipping");
     };
 
     const handleWishlist = () => {

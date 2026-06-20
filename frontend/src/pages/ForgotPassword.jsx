@@ -30,7 +30,7 @@ export default function ForgotPassword() {
       return;
     }
     
-    const result = await forgotPassword(email);
+    const result = await forgotPassword({email});
     if (result.success) {
       setSubmitted(true);
     }

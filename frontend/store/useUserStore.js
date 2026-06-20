@@ -42,7 +42,24 @@ const useUserStore = create(
             registerUser: async (userData) => {
                 set({ loading: true, error: null });
                 try {
-                    const { data } = await api.post('/auth/register', userData);
+                    const isFormData = userData instanceof FormData;
+
+                    let config = {};
+                    let response;
+
+                    if (isFormData) {
+                        config = {
+                            headers: {
+                                'Content-Type': 'multipart/form-data'
+                            }
+                        };
+
+                        response = await api.post('/auth/register', userData, config);
+                    } else {
+                        response = await api.post('/auth/register', userData);
+                    }
+
+                    const { data } = response;
 
                     if (data.token) {
                         localStorage.setItem('token', data.token);
@@ -54,7 +71,9 @@ const useUserStore = create(
                             loading: false,
                             error: null,
                             message: data.message
-                        })
+                        });
+                    } else {
+                        set({ loading: false });
                     }
                     return { success: true, data };
 
@@ -239,7 +258,8 @@ const useUserStore = create(
                 })
 
                 try {
-                    const { data } = await api.post('/auth/password/forgot', userData);
+                    const { data } = await api.post('/auth/forgot-password', userData);
+                    console.log(data);
                     set({
                         loading: false,
                         error: null,
@@ -252,6 +272,8 @@ const useUserStore = create(
                         loading: false,
 
                     })
+
+                    console.log(error);
                     return { success: false, error: getErrorMessage(error, 'Failed to forgot password') };
                 }
             },

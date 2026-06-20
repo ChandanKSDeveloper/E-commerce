@@ -6,6 +6,7 @@ import { Loader2 } from "lucide-react";
 
 import MetaData from "@/components/common/Metadata";
 import useProductStore from "../../store/useProductStore";
+import useCartStore from "../../store/useCartStore";
 import { ProductGridSkeleton, HeroSkeleton } from "@/components/loader-skeleton";
 import ErrorPage from "@/components/common/Error";
 import Pagination from "@/components/common/Pagination";
@@ -14,6 +15,7 @@ import PaginationInfo from "@/components/PaginationInfo";
 export default function Home() {
     const navigate = useNavigate();
     const [searchParams, setSearchParams] = useSearchParams();
+    const { addToCart } = useCartStore();
     const {
         products,
         loading,
@@ -49,6 +51,14 @@ export default function Home() {
         e.preventDefault(); // Prevent Link navigation
         e.stopPropagation();
 
+        addToCart({
+            product: product._id,
+            name: product.name,
+            price: product.price,
+            image: product.image?.[0]?.url || "",
+            stock: product.stock,
+        });
+
         toast.success(`${product.name} added to cart`, {
             description: `Quantity: 1`,
             action: {
@@ -56,7 +66,7 @@ export default function Home() {
                 onClick: () => navigate("/cart"),
             },
         });
-    }, [navigate]);
+    }, [navigate, addToCart]);
 
     const productsArray = Array.isArray(products) ? products : [];
 

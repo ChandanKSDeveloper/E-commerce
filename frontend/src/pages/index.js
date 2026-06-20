@@ -6,6 +6,9 @@ import Register from "./Register.jsx";
 import ForgotPassword from "./ForgotPassword.jsx";
 import ResetPassword from "./ResetPassword.jsx";
 import Profile from "./Profile.jsx";
+import Cart from "./Cart.jsx";
+import Shipping from "./Shipping.jsx";
+import ConfirmOrder from "./ConfirmOrder.jsx";
 
 
 export {
@@ -16,5 +19,8 @@ export {
     Register,
     ForgotPassword,
     ResetPassword,
-    Profile
+    Profile,
+    Cart,
+    Shipping,
+    ConfirmOrder
 }

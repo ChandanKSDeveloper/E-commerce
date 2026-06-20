@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ShoppingCart, User, Search, Menu, X, LogOut, Loader2 } from "lucide-react";
 import useUserStore from "../../../store/useUserStore";
+import useCartStore from "../../../store/useCartStore";
 
 export default function Navbar() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -14,6 +15,8 @@ export default function Navbar() {
   const location = useLocation();
 
   const { isAuthenticated, user, loading, authChecked, logoutUser } = useUserStore();
+  const { cartItems } = useCartStore();
+  const cartItemsCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   // Clear search when navigating away from search page
   useEffect(() => {
@@ -206,9 +209,11 @@ export default function Navbar() {
             <Button variant="outline" size="icon" className="sm:px-3">
               <ShoppingCart className="h-5 w-5" />
             </Button>
-            <span className="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-              0
-            </span>
+            {cartItemsCount > 0 && (
+              <span className="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center animate-in zoom-in duration-200">
+                {cartItemsCount}
+              </span>
+            )}
           </Link>
         </div>
       </div>
@@ -232,9 +237,14 @@ export default function Navbar() {
           <div className="flex flex-col gap-2">
             {renderUserButton({ mobile: true })}
 
-            <Link to="/cart" onClick={() => setIsMenuOpen(false)}>
+            <Link to="/cart" onClick={() => setIsMenuOpen(false)} className="relative">
               <Button variant="ghost" className="w-full justify-start">
                 <ShoppingCart className="mr-2 h-4 w-4" /> Cart
+                {cartItemsCount > 0 && (
+                  <span className="ml-auto bg-primary text-white text-xs rounded-full px-2 py-0.5 font-semibold">
+                    {cartItemsCount}
+                  </span>
+                )}
               </Button>
             </Link>
           </div>

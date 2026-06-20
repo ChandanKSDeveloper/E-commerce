@@ -18,6 +18,8 @@ export default function Register() {
     password: '',
     confirmPassword: ''
   });
+  const [avatar, setAvatar] = useState(null);
+  const [avatarPreview, setAvatarPreview] = useState('');
 
   useEffect(() => {
     if (authChecked && isAuthenticated) {
@@ -40,6 +42,33 @@ export default function Register() {
     });
   };
 
+  const handleAvatarChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      // Validate file type
+      const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'image/webp'];
+      if (!allowedTypes.includes(file.type)) {
+        toast.error('Please select a valid image file (JPEG, PNG, GIF, or WEBP)');
+        return;
+      }
+      
+      // Validate file size (max 5MB)
+      if (file.size > 5 * 1024 * 1024) {
+        toast.error('File size should be less than 5MB');
+        return;
+      }
+      
+      setAvatar(file);
+      
+      // Create preview
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setAvatarPreview(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     
@@ -58,8 +87,16 @@ export default function Register() {
       return;
     }
     
-    const { confirmPassword, ...registerData } = formData;
-    await registerUser(registerData);
+    // Create FormData object for file upload
+    const formDataToSend = new FormData();
+    formDataToSend.append('name', formData.name);
+    formDataToSend.append('email', formData.email);
+    formDataToSend.append('password', formData.password);
+    if (avatar) {
+      formDataToSend.append('avatar', avatar);
+    }
+    
+    await registerUser(formDataToSend);
   };
 
   // Show loading state while initial auth check is running
@@ -96,8 +133,33 @@ export default function Register() {
             </p>
           </div>
           
-          <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+          <form className="mt-8 space-y-6" onSubmit={handleSubmit} encType="multipart/form-data">
             <div className="space-y-4">
+              {/* Avatar Upload */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                  Avatar (Optional)
+                </label>
+                <div className="mt-1 flex items-center space-x-4">
+                  {avatarPreview && (
+                    <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-100">
+                      <img src={avatarPreview} alt="Avatar preview" className="w-full h-full object-cover" />
+                    </div>
+                  )}
+                  <Input
+                    id="avatar"
+                    name="avatar"
+                    type="file"
+                    accept="image/jpeg,image/jpg,image/png,image/gif,image/webp"
+                    onChange={handleAvatarChange}
+                    className="flex-1"
+                  />
+                </div>
+                <p className="mt-1 text-xs text-gray-500">
+                  Max size: 5MB. Allowed: JPEG, PNG, GIF, WEBP
+                </p>
+              </div>
+
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                   Full Name
@@ -195,11 +257,14 @@ export default function Register() {
 
             <Button
               type="submit"
-              className="w-full gap-2"
+              className="w-full gap-2 cursor-pointer"
               disabled={loading}
             >
               {loading ? (
-                'Creating account...'
+                <>
+                  <Loader2 className="h-4 w-4 animate-spin" />
+                  Creating account...
+                </>
               ) : (
                 <>
                   <UserPlus className="h-4 w-4" />

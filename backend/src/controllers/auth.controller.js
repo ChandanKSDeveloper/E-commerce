@@ -4,6 +4,8 @@ import ErrorHandler from "../utils/ErrorHandler.js";
 import sendToken from "../utils/jwtToken.js";
 import crypto from "crypto";
 import sendEmail from "../utils/sendEmail.js";
+import { uploadOnCloudinary } from "../utils/cloudinaryUtils.js";
+import fs from "fs"
 
 // Register a user
 /**
@@ -12,16 +14,44 @@ import sendEmail from "../utils/sendEmail.js";
  * @access  Public
  */
 const registerUser = asyncHandler(async (req, res, next) => {
-    const { name, email, password } = req.body;
+    const {name, email, password} = req.body;
+
+    const existingUser = await User.findOne({email});
+    if(existingUser){
+        return next(new ErrorHandler("User already exists", 400));
+    }
+
+    let avatarData = {
+        public_id: "default-avatar",
+        url: "https://res.cloudinary.com/dtm2oy9i9/image/upload/v1764265657/images-to-pdf/evew90bvgz5ivagx4xo1.png"
+    };
+
+    if (req.file) {
+        try {
+            const result = await uploadOnCloudinary(req.file.path);
+            if (result) {
+                avatarData = {
+                    public_id: result.public_id,
+                    url: result.url
+                };
+            }
+            // Remove temporary file
+            if (fs.existsSync(req.file.path)) {
+                fs.unlinkSync(req.file.path);
+            }
+        } catch (error) {
+            console.error('Cloudinary upload error:', error);
+            // Continue with default avatar
+        }
+    } else {
+        console.log("image not uploaded : ", req.file)
+    }
 
     const user = await User.create({
         name, // name of the user
         email, // email of the user
         password, // password of the user
-        avatar: {
-            public_id: "images-to-pdf/evew90bvgz5ivagx4xo1",
-            url: "https://res.cloudinary.com/dtm2oy9i9/image/upload/v1764265657/images-to-pdf/evew90bvgz5ivagx4xo1.png"
-        }
+        avatar: avatarData
     });
 
     sendToken(user, 201, res); // send token to the user
@@ -96,12 +126,15 @@ const forgotPassword = asyncHandler(async (req, res, next) => {
         return next(new ErrorHandler("User not found with this email", 404));
     }
 
+    console.log(req.body.email);
     const resetToken = await user.getResetPasswordToken();
+    console.log("reset token : " ,resetToken)
 
     await user.save({ validateBeforeSave: false });
 
     // TODO: Send email with reset link
     const resetUrl = `${req.protocol}://${req.get("host")}/password/reset/${resetToken}`;
+    console.log(resetUrl)
 
     const message = `Your password reset token is: \n\n ${resetUrl} \n\n If you have not requested this email, then ignore it.`;
 
@@ -185,8 +218,6 @@ const updatePassword = asyncHandler(async (req, res, next) => {
     if (!user) {
         return next(new ErrorHandler("User not found", 404));
     }
-    console.log(req.body.newPassword);
-    console.log(req.body.oldPassword);
     const isPasswordMatched = await user.comparePassword(req.body.oldPassword);
 
     if (!isPasswordMatched) {

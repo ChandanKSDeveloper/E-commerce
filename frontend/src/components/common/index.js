@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import MetaData from "./Metadata";
 import Navbar from "./Navbar";
 import Pagination from "./Pagination";
+import CheckoutSteps from "./CheckoutSteps";
 
 
 export {
@@ -10,5 +11,6 @@ export {
     Footer,
     Navbar,
     MetaData,
-    Pagination
+    Pagination,
+    CheckoutSteps
 }

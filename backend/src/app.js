@@ -55,7 +55,7 @@ app.use("/api/v1", productRoutes);
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1", adminRoutes);
 app.use("/api/v1", orderRoutes);
-
+app.use("/api/v1", paymentRoutes);
 
 // Error Middleware
 app.use(errorMiddleware);

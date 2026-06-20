@@ -10,12 +10,13 @@ import {
     updateProfile
 } from "../controllers/auth.controller.js";
 
+import {upload} from "../utils/upload.js";
 import { isAuthenticatedUser } from "../middlewares/auth.middleware.js";
 
 const router = express.Router();
 
 // Register a user
-router.post("/register", registerUser);
+router.post("/register", upload.single("avatar"), registerUser);
 // Login user
 router.post("/login", loginUser);
 // Logout user
