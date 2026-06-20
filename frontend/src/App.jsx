@@ -8,18 +8,32 @@ import api from '@/config/axios'
 import { Navbar, Footer } from './components/common/index'
 
 import { Home, ProductPage, SearchPage, Login, Register, ForgotPassword, ResetPassword, Profile, Cart, Shipping, ConfirmOrder, Payment, MyOrders, OrderDetails } from './pages/index'
+import Dashboard from './pages/admin/Dashboard'
+import AdminUsers from './pages/admin/AdminUsers'
+import AdminOrders from './pages/admin/AdminOrders'
+import NewProduct from './pages/admin/NewProduct'
+import AdminProducts from './pages/admin/AdminProducts'
 import ProtectedRoute from './components/ProtectedRoute'
 import useUserStore from '../store/useUserStore';
 
 
 function App() {
 
-  const { checkAuth, isAuthenticated } = useUserStore();
+  const {isAuthenticated } = useUserStore();
+
+  const checkAuth = useUserStore((s) => s.checkAuth);
+  const authChecked = useUserStore((s) => s.authChecked);
+
+  useEffect(() => {
+    if (!authChecked) {
+      checkAuth();
+    }
+  }, [authChecked]);
   const [stripePromise, setStripePromise] = useState(null);
   const [stripeConfigChecked, setStripeConfigChecked] = useState(false);
 
   useEffect(() => {
-    async function getStripeKey(){
+    async function getStripeKey() {
       try {
         const { data } = await api.get("/payment/config");
         if (data.publishableKey) {
@@ -67,21 +81,21 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password/:token" element={<ResetPassword />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/shipping" 
+          <Route path="/shipping"
             element={
               <ProtectedRoute>
                 <Shipping />
               </ProtectedRoute>
-            } 
+            }
           />
-          <Route path="/order/confirm" 
+          <Route path="/order/confirm"
             element={
               <ProtectedRoute>
                 <ConfirmOrder />
               </ProtectedRoute>
-            } 
+            }
           />
-          <Route path="/payment/process" 
+          <Route path="/payment/process"
             element={
               <ProtectedRoute>
                 {!stripeConfigChecked ? (
@@ -102,29 +116,73 @@ function App() {
                   <Payment />
                 )}
               </ProtectedRoute>
-            } 
+            }
           />
-          <Route path="/profile" 
+          <Route path="/profile"
             element={
               <ProtectedRoute>
                 <Profile />
               </ProtectedRoute>
-            } 
+            }
           />
-          <Route path="/orders/me" 
+          <Route path="/orders/me"
             element={
               <ProtectedRoute>
                 <MyOrders />
               </ProtectedRoute>
-            } 
+            }
           />
-          <Route path="/order/:id" 
+          <Route path="/order/:id"
             element={
               <ProtectedRoute>
                 <OrderDetails />
               </ProtectedRoute>
-            } 
+            }
           />
+          <Route path="/admin/dashboard"
+            element={
+              <ProtectedRoute isAdmin>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/admin/users"
+            element={
+              <ProtectedRoute isAdmin>
+                <AdminUsers />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/admin/orders"
+            element={
+              <ProtectedRoute isAdmin>
+                <AdminOrders />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/admin/product/new"
+            element={
+              <ProtectedRoute isAdmin>
+                <NewProduct />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/admin/product/:id"
+            element={
+              <ProtectedRoute isAdmin>
+                <NewProduct />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route path="/admin/products"
+            element={
+              <ProtectedRoute isAdmin>
+                <AdminProducts />
+              </ProtectedRoute>
+            }
+          />
+
         </Routes>
         <Footer />
       </BrowserRouter>

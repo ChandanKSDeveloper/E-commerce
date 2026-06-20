@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import AdminSidebar from "../../components/layout/AdminSidebar";
 import MetaData from "@/components/common/Metadata";
 import useUserStore from "../../../store/useUserStore";
 import { toast } from "sonner";
-import { 
-  Edit, 
-  Trash2, 
-  X, 
-  Loader2, 
+import {
+  Edit,
+  Trash2,
+  X,
+  Loader2,
   AlertCircle,
   ShieldAlert,
   UserCheck
@@ -16,15 +16,26 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 export default function AdminUsers() {
-  const { 
-    users, 
-    loading, 
-    error, 
+  const {
+    users,
+    loading,
+    error,
     user: currentUser,
-    getAllUsersAdmin, 
-    updateUserRole, 
-    deleteUser 
+    getAllUsersAdmin,
+    updateUserRole,
+    deleteUser
   } = useUserStore();
+
+  console.log("AdminUsers Render");
+  useEffect(() => {
+    console.log("AdminUsers Mounted");
+
+    getAllUsersAdmin();
+
+    return () => {
+      console.log("AdminUsers Unmounted");
+    };
+  }, []);
 
   const [selectedUser, setSelectedUser] = useState(null);
   const [editForm, setEditForm] = useState({
@@ -34,9 +45,13 @@ export default function AdminUsers() {
   });
   const [updating, setUpdating] = useState(false);
 
+  const hasFetchedRef = useRef(false);
   useEffect(() => {
-    getAllUsersAdmin();
-  }, [getAllUsersAdmin]);
+    if (!hasFetchedRef.current) {
+      hasFetchedRef.current = true;
+      getAllUsersAdmin();
+    }
+  }, []);
 
   const handleOpenEdit = (user) => {
     setSelectedUser(user);
@@ -100,7 +115,7 @@ export default function AdminUsers() {
       <MetaData title="Manage Users - Admin" />
       <div className="flex min-h-screen bg-gray-50 dark:bg-gray-900">
         <AdminSidebar />
-        
+
         <main className="flex-1 p-6 md:p-10 overflow-y-auto">
           {/* Header */}
           <div className="mb-8">
@@ -147,13 +162,13 @@ export default function AdminUsers() {
                   <tbody className="divide-y divide-gray-50 dark:divide-gray-750">
                     {users.map((userObj) => (
                       <tr key={userObj._id} className="text-gray-700 dark:text-gray-300 hover:bg-gray-50/30 dark:hover:bg-gray-800/40 transition">
-                        
+
                         {/* Avatar */}
                         <td className="py-4 px-6">
                           {userObj.avatar?.url ? (
-                            <img 
-                              src={userObj.avatar.url} 
-                              alt={userObj.name} 
+                            <img
+                              src={userObj.avatar.url}
+                              alt={userObj.name}
                               className="h-10 w-10 rounded-full object-cover ring-2 ring-indigo-500/10"
                             />
                           ) : (
@@ -199,17 +214,17 @@ export default function AdminUsers() {
                         {/* Actions */}
                         <td className="py-4 px-6 text-right">
                           <div className="flex justify-end gap-2">
-                            <Button 
-                              variant="outline" 
+                            <Button
+                              variant="outline"
                               size="icon"
                               onClick={() => handleOpenEdit(userObj)}
                               className="h-9 w-9 text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-indigo-950/30 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-lg"
                             >
                               <Edit className="h-4.5 w-4.5" />
                             </Button>
-                            
-                            <Button 
-                              variant="outline" 
+
+                            <Button
+                              variant="outline"
                               size="icon"
                               onClick={() => handleDeleteUser(userObj._id, userObj.name)}
                               disabled={userObj._id === currentUser?._id}
@@ -231,7 +246,7 @@ export default function AdminUsers() {
           {selectedUser && (
             <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
               <div className="bg-white dark:bg-gray-800 rounded-2xl w-full max-w-md shadow-xl border dark:border-gray-700 animate-in zoom-in duration-200">
-                
+
                 {/* Modal Header */}
                 <div className="flex justify-between items-center px-6 py-4 border-b dark:border-gray-700">
                   <div>
@@ -245,7 +260,7 @@ export default function AdminUsers() {
 
                 {/* Modal Body / Form */}
                 <form onSubmit={handleUpdateUser} className="p-6 space-y-4">
-                  
+
                   {/* Name Input */}
                   <div className="space-y-1.5">
                     <label htmlFor="name" className="text-xs font-semibold text-gray-700 dark:text-gray-300">Name *</label>
@@ -296,9 +311,9 @@ export default function AdminUsers() {
                     <Button variant="outline" type="button" onClick={handleCloseEdit} className="rounded-xl px-5">
                       Cancel
                     </Button>
-                    <Button 
-                      type="submit" 
-                      disabled={updating} 
+                    <Button
+                      type="submit"
+                      disabled={updating}
                       className="bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl px-5 flex items-center gap-1.5 font-medium transition"
                     >
                       {updating && <Loader2 className="h-4 w-4 animate-spin" />}
