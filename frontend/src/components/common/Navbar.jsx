@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ShoppingCart, User, Search, Menu, X, LogOut, Loader2 } from "lucide-react";
+import { ShoppingCart, User, Search, Menu, X, LogOut, Loader2, Package, LayoutDashboard } from "lucide-react";
 import useUserStore from "../../../store/useUserStore";
 import useCartStore from "../../../store/useCartStore";
 
@@ -80,6 +80,18 @@ export default function Navbar() {
                 <User className="mr-2 h-4 w-4" /> Profile
               </Button>
             </Link>
+            <Link to="/orders/me" onClick={() => setIsMenuOpen(false)}>
+              <Button variant="ghost" className="w-full justify-start">
+                <Package className="mr-2 h-4 w-4" /> My Orders
+              </Button>
+            </Link>
+            {user?.role === "admin" && (
+              <Link to="/admin/dashboard" onClick={() => setIsMenuOpen(false)}>
+                <Button variant="ghost" className="w-full justify-start text-indigo-600 dark:text-indigo-400 font-semibold">
+                  <LayoutDashboard className="mr-2 h-4 w-4" /> Admin Dashboard
+                </Button>
+              </Link>
+            )}
             <Button
               variant="ghost"
               className="w-full justify-start text-red-500 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-950"
@@ -129,6 +141,22 @@ export default function Navbar() {
               >
                 <User className="h-4 w-4" /> My Profile
               </Link>
+              <Link
+                to="/orders/me"
+                className="flex items-center gap-2 px-4 py-2.5 text-sm hover:bg-accent transition-colors"
+                onClick={() => setIsProfileMenuOpen(false)}
+              >
+                <Package className="h-4 w-4" /> My Orders
+              </Link>
+              {user?.role === "admin" && (
+                <Link
+                  to="/admin/dashboard"
+                  className="flex items-center gap-2 px-4 py-2.5 text-sm hover:bg-accent text-indigo-600 dark:text-indigo-400 font-semibold transition-colors"
+                  onClick={() => setIsProfileMenuOpen(false)}
+                >
+                  <LayoutDashboard className="h-4 w-4" /> Admin Dashboard
+                </Link>
+              )}
               <button
                 onClick={handleLogout}
                 className="flex items-center gap-2 w-full px-4 py-2.5 text-sm text-red-500 hover:bg-red-50 dark:hover:bg-red-950 transition-colors"

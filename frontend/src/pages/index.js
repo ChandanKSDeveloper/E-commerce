@@ -9,7 +9,9 @@ import Profile from "./Profile.jsx";
 import Cart from "./Cart.jsx";
 import Shipping from "./Shipping.jsx";
 import ConfirmOrder from "./ConfirmOrder.jsx";
-
+import Payment from "./Payment.jsx";
+import MyOrders from "./MyOrders.jsx";
+import OrderDetails from "./OrderDetails.jsx";
 
 export {
     Home,
@@ -22,5 +24,8 @@ export {
     Profile,
     Cart,
     Shipping,
-    ConfirmOrder
+    ConfirmOrder,
+    Payment,
+    MyOrders,
+    OrderDetails
 }

@@ -1,19 +1,16 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { toast } from 'sonner';
 import { MapPin, Phone, User, ShoppingCart, CreditCard, ChevronRight } from 'lucide-react';
 import useCartStore from '../../store/useCartStore';
 import useUserStore from '../../store/useUserStore';
-import useOrderStore from '../../store/useOrderStore';
 import { Button } from '@/components/ui';
 import MetaData from '@/components/common/Metadata';
 import CheckoutSteps from '@/components/common/CheckoutSteps';
 
 export default function ConfirmOrder() {
     const navigate = useNavigate();
-    const { cartItems, shippingInfo, clearCart } = useCartStore();
+    const { cartItems, shippingInfo } = useCartStore();
     const { user } = useUserStore();
-    const { createOrder, loading } = useOrderStore();
 
     // Calculate Prices
     const itemsPrice = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
@@ -23,35 +20,8 @@ export default function ConfirmOrder() {
 
     const addressStr = `${shippingInfo.address}, ${shippingInfo.city}, ${shippingInfo.state}, ${shippingInfo.pinCode}, ${shippingInfo.country}`;
 
-    const processOrder = async () => {
-        const orderData = {
-            orderItems: cartItems.map(item => ({
-                name: item.name,
-                price: item.price,
-                quantity: item.quantity,
-                image: item.image,
-                product: item.product
-            })),
-            shippingInfo,
-            itemsPrice,
-            taxPrice,
-            shippingPrice,
-            totalPrice,
-            paymentInfo: {
-                id: `mock_pay_${Math.random().toString(36).substr(2, 9)}`,
-                status: 'succeeded'
-            }
-        };
-
-        const result = await createOrder(orderData);
-        if (result.success) {
-            toast.success('Order placed successfully!');
-            clearCart();
-            // Redirect to profile page or a thank you page
-            navigate('/profile');
-        } else {
-            toast.error(result.error || 'Failed to place order');
-        }
+    const proceedToPayment = () => {
+        navigate('/payment/process');
     };
 
     return (
@@ -150,12 +120,11 @@ export default function ConfirmOrder() {
                             </div>
 
                             <Button
-                                onClick={processOrder}
-                                disabled={loading}
+                                onClick={proceedToPayment}
                                 className="w-full py-6 text-base gap-2 rounded-xl"
                             >
                                 <CreditCard className="h-5 w-5" />
-                                {loading ? 'Placing Order...' : 'Place Order & Pay'}
+                                Proceed to Payment
                             </Button>
 
                             <p className="text-center text-xs text-gray-400 mt-4 flex items-center justify-center gap-1">

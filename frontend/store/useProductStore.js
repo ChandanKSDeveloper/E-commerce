@@ -1,25 +1,5 @@
 import { create } from "zustand";
-import axios from "axios";
-
-// ─── Server URL Config ───────────────────────────────────────────────────────
-// Add or change URLs here to support additional environments.
-// The active URL is controlled by VITE_API_URL in your .env file:
-//   - Development : frontend/.env              → http://localhost:4000/api/v1
-//   - Production  : frontend/.env.production   → https://your-production-api.com/api/v1
-const SERVER_URLS = {
-    dev: "http://localhost:4000/api/v1",
-    prod: "https://your-production-api.com/api/v1",
-};
-
-const envApiUrl = import.meta.env.VITE_API_URL?.trim();
-const API_BASE_URL = envApiUrl
-    ? envApiUrl.replace(/\/$/, "")       // use .env value (dev or prod)
-    : SERVER_URLS.dev;                   // safe fallback to local backend
-
-const api = axios.create({
-    baseURL: API_BASE_URL,
-    withCredentials: true,
-});
+import api from "../src/config/axios";
 
 const getErrorMessage = (error, fallbackMessage) =>
     error.response?.data?.message ||
@@ -42,10 +22,14 @@ const useProductStore = create((set) => ({
     filteredProductsCount: 0,
     isChangingPage: false,
 
-
+    // Review-specific state
+    reviewLoading: false,
+    reviewError: null,
+    submitReviewSuccess: false,
 
     clearError: () => set({ error: null }),
     clearMessage: () => set({ message: null }),
+    clearReviewState: () => set({ reviewLoading: false, reviewError: null, submitReviewSuccess: false }),
     setProducts: (products) => set({ products }),
     setProduct: (product) => set({ product }),
 
@@ -198,21 +182,23 @@ const useProductStore = create((set) => ({
     },
 
     createProductReview: async (payload) => {
-        set({ loading: true, error: null, message: null });
+        set({ reviewLoading: true, reviewError: null, submitReviewSuccess: false });
 
         try {
             const { data } = await api.put("/review", payload);
 
             set({
-                loading: false,
+                reviewLoading: false,
+                submitReviewSuccess: true,
                 message: data.message ?? "Review saved successfully",
             });
 
             return data;
         } catch (error) {
             set({
-                loading: false,
-                error: getErrorMessage(error, "Failed to save review"),
+                reviewLoading: false,
+                reviewError: getErrorMessage(error, "Failed to save review"),
+                submitReviewSuccess: false,
             });
 
             return null;
@@ -220,7 +206,7 @@ const useProductStore = create((set) => ({
     },
 
     getProductReviews: async (id) => {
-        set({ loading: true, error: null });
+        set({ reviewLoading: true, reviewError: null });
 
         try {
             const { data } = await api.get("/reviews", {
@@ -229,15 +215,15 @@ const useProductStore = create((set) => ({
 
             set({
                 reviews: Array.isArray(data.reviews) ? data.reviews : [],
-                loading: false,
+                reviewLoading: false,
             });
 
             return data;
         } catch (error) {
             set({
                 reviews: [],
-                loading: false,
-                error: getErrorMessage(error, "Failed to fetch reviews"),
+                reviewLoading: false,
+                reviewError: getErrorMessage(error, "Failed to fetch reviews"),
             });
 
             return null;

@@ -14,6 +14,7 @@ const useUserStore = create(
         (set, get) => ({
             // state
             user: null,
+            users: [],
             isAuthenticated: false,
             loading: false,
             authChecked: false, // tracks if initial auth check completed
@@ -343,6 +344,51 @@ const useUserStore = create(
                         user: null
                     })
                     return { success: false, error: result.error };
+                }
+            },
+
+            // Admin actions
+            getAllUsersAdmin: async () => {
+                set({ loading: true, error: null });
+                try {
+                    const { data } = await api.get('/users');
+                    set({ users: data.users, loading: false });
+                    return { success: true, users: data.users };
+                } catch (error) {
+                    set({ error: getErrorMessage(error, 'Failed to fetch users'), loading: false });
+                    return { success: false, error: getErrorMessage(error, 'Failed to fetch users') };
+                }
+            },
+
+            updateUserRole: async (id, payload) => {
+                set({ loading: true, error: null });
+                try {
+                    const { data } = await api.put(`/user/${id}`, payload);
+                    set((state) => ({
+                        users: state.users.map((u) => u._id === id ? data.user : u),
+                        loading: false,
+                        message: data.message || "User updated successfully"
+                    }));
+                    return { success: true, user: data.user };
+                } catch (error) {
+                    set({ error: getErrorMessage(error, 'Failed to update user'), loading: false });
+                    return { success: false, error: getErrorMessage(error, 'Failed to update user') };
+                }
+            },
+
+            deleteUser: async (id) => {
+                set({ loading: true, error: null });
+                try {
+                    const { data } = await api.delete(`/user/${id}`);
+                    set((state) => ({
+                        users: state.users.filter((u) => u._id !== id),
+                        loading: false,
+                        message: data.message || "User deleted successfully"
+                    }));
+                    return { success: true, message: data.message };
+                } catch (error) {
+                    set({ error: getErrorMessage(error, 'Failed to delete user'), loading: false });
+                    return { success: false, error: getErrorMessage(error, 'Failed to delete user') };
                 }
             }
         }),

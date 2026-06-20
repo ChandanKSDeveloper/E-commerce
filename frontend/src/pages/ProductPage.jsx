@@ -12,7 +12,8 @@ import {
     Plus,
     Check,
     AlertCircle,
-    ChevronLeft
+    ChevronLeft,
+    Loader2
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -21,18 +22,34 @@ import { Skeleton } from "@/components/ui/skeleton";
 import MetaData from "@/components/common/Metadata";
 import useProductStore from '../../store/useProductStore';
 import useCartStore from '../../store/useCartStore';
+import useUserStore from '../../store/useUserStore';
 import { useEffect, useState } from "react";
 import ErrorPage from "@/components/common/Error";
 
 const ProductPage = () => {
     const { id } = useParams(); // Fixed: extract id properly
     const navigate = useNavigate();
-    const { product, loading, error, getProductById } = useProductStore();
+    const { 
+        product, 
+        loading, 
+        error, 
+        getProductById,
+        createProductReview,
+        reviewLoading,
+        reviewError,
+        clearReviewState
+    } = useProductStore();
     const { addToCart } = useCartStore();
+    const { isAuthenticated } = useUserStore();
 
     const [quantity, setQuantity] = useState(1);
     const [selectedImage, setSelectedImage] = useState(0);
     const [isWishlisted, setIsWishlisted] = useState(false);
+
+    // Review form state
+    const [rating, setRating] = useState(5);
+    const [hoverRating, setHoverRating] = useState(0);
+    const [comment, setComment] = useState("");
 
     useEffect(() => {
         if (id) {
@@ -137,6 +154,30 @@ const ProductPage = () => {
             toast.success("Link copied!", {
                 description: "Product link copied to clipboard",
             });
+        }
+    };
+
+    const handleReviewSubmit = async (e) => {
+        e.preventDefault();
+        if (!comment.trim()) {
+            toast.error("Please enter a review comment");
+            return;
+        }
+
+        const res = await createProductReview({
+            rating,
+            comment,
+            productId: product._id
+        });
+
+        if (res && res.success) {
+            toast.success("Review submitted successfully!");
+            setComment("");
+            setRating(5);
+            // Refresh product details to show the new review
+            getProductById(product._id);
+        } else {
+            toast.error(reviewError || "Failed to submit review");
         }
     };
 
@@ -472,25 +513,122 @@ const ProductPage = () => {
                             </TabsContent>
 
                             <TabsContent value="reviews" className="mt-6">
-                                <div className="bg-white dark:bg-gray-800 rounded-lg p-6">
-                                    <h3 className="text-lg font-semibold mb-4">Customer Reviews</h3>
-                                    {product.reviews && product.reviews.length > 0 ? (
-                                        <div className="space-y-4">
-                                            {product.reviews.map((review, idx) => (
-                                                <div key={idx} className="border-b pb-4">
-                                                    <div className="flex items-center gap-2 mb-2">
-                                                        {renderStars(review.rating)}
-                                                        <span className="font-medium">{review.user?.name || "Anonymous"}</span>
-                                                    </div>
-                                                    <p className="text-gray-600 dark:text-gray-400">{review.comment}</p>
+                                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 border shadow-sm">
+                                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                                        {/* Reviews List */}
+                                        <div className="lg:col-span-2 space-y-6">
+                                            <h3 className="text-lg font-bold text-gray-900 dark:text-white flex items-center gap-2">
+                                                Customer Reviews ({product.numberOfReviews || 0})
+                                            </h3>
+
+                                            {product.reviews && product.reviews.length > 0 ? (
+                                                <div className="divide-y divide-gray-100 dark:divide-gray-700">
+                                                    {product.reviews.map((review, idx) => (
+                                                        <div key={idx} className="py-4 first:pt-0 last:pb-0 flex gap-4">
+                                                            <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-sm flex-shrink-0">
+                                                                {(review.name || "Anonymous").charAt(0).toUpperCase()}
+                                                            </div>
+                                                            <div className="space-y-1 flex-1">
+                                                                <div className="flex items-center justify-between">
+                                                                    <h4 className="font-semibold text-sm text-gray-900 dark:text-white">
+                                                                        {review.name || "Anonymous"}
+                                                                    </h4>
+                                                                    {renderStars(review.rating)}
+                                                                </div>
+                                                                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mt-1">
+                                                                    {review.comment}
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    ))}
                                                 </div>
-                                            ))}
+                                            ) : (
+                                                <div className="text-center py-12 bg-gray-50 dark:bg-gray-900/50 rounded-xl border border-dashed">
+                                                    <p className="text-gray-500 text-sm">No reviews yet. Be the first to review this product!</p>
+                                                </div>
+                                            )}
                                         </div>
-                                    ) : (
-                                        <div className="text-center py-8">
-                                            <p className="text-gray-500">No reviews yet. Be the first to review this product!</p>
+
+                                        {/* Write a Review Form */}
+                                        <div className="lg:col-span-1 border-t lg:border-t-0 lg:border-l lg:pl-8 pt-8 lg:pt-0">
+                                            <div className="bg-gray-50 dark:bg-gray-900/30 rounded-xl p-5 border">
+                                                <h3 className="text-base font-bold text-gray-900 dark:text-white mb-2">
+                                                    Write a Review
+                                                </h3>
+                                                <p className="text-xs text-gray-500 dark:text-gray-400 mb-4 leading-relaxed">
+                                                    Share your thoughts and feedback with other customers.
+                                                </p>
+
+                                                {isAuthenticated ? (
+                                                    <form onSubmit={handleReviewSubmit} className="space-y-4">
+                                                        <div className="space-y-1.5">
+                                                            <label className="text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
+                                                                Overall Rating
+                                                            </label>
+                                                            <div className="flex items-center gap-1">
+                                                                {[1, 2, 3, 4, 5].map((star) => (
+                                                                    <button
+                                                                        key={star}
+                                                                        type="button"
+                                                                        onClick={() => setRating(star)}
+                                                                        onMouseEnter={() => setHoverRating(star)}
+                                                                        onMouseLeave={() => setHoverRating(0)}
+                                                                        className="p-1 focus:outline-none transition-colors"
+                                                                    >
+                                                                        <Star
+                                                                            className={`w-6 h-6 ${
+                                                                                (hoverRating || rating) >= star
+                                                                                    ? "fill-yellow-400 text-yellow-400"
+                                                                                    : "text-gray-300"
+                                                                            }`}
+                                                                        />
+                                                                    </button>
+                                                                ))}
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="space-y-1.5">
+                                                            <label htmlFor="comment" className="text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
+                                                                Review Comment
+                                                            </label>
+                                                            <textarea
+                                                                id="comment"
+                                                                rows="4"
+                                                                value={comment}
+                                                                onChange={(e) => setComment(e.target.value)}
+                                                                className="w-full text-sm rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-2.5 text-gray-900 dark:text-white focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all resize-none"
+                                                                placeholder="What did you like or dislike?"
+                                                                required
+                                                            />
+                                                        </div>
+
+                                                        <Button
+                                                            type="submit"
+                                                            disabled={reviewLoading}
+                                                            className="w-full justify-center gap-2"
+                                                        >
+                                                            {reviewLoading && <Loader2 className="w-4 h-4 animate-spin" />}
+                                                            Submit Review
+                                                        </Button>
+                                                    </form>
+                                                ) : (
+                                                    <div className="text-center py-6">
+                                                        <p className="text-xs text-gray-500 mb-4 leading-relaxed">
+                                                            You must be logged in to post a review.
+                                                        </p>
+                                                        <Button
+                                                            variant="outline"
+                                                            size="sm"
+                                                            className="w-full"
+                                                            onClick={() => navigate('/login', { state: { from: window.location.pathname } })}
+                                                        >
+                                                            Sign In to Review
+                                                        </Button>
+                                                    </div>
+                                                )}
+                                            </div>
                                         </div>
-                                    )}
+                                    </div>
                                 </div>
                             </TabsContent>
                         </Tabs>

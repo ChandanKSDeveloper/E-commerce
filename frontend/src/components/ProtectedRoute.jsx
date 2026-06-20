@@ -2,8 +2,8 @@ import { Navigate, useLocation } from "react-router-dom";
 import useUserStore from "../../store/useUserStore";
 import { Loader2 } from "lucide-react";
 
-export default function ProtectedRoute({ children }) {
-    const { isAuthenticated, loading, authChecked } = useUserStore();
+export default function ProtectedRoute({ children, isAdmin }) {
+    const { isAuthenticated, loading, authChecked, user } = useUserStore();
     const location = useLocation();
 
     // Show loading spinner while initial auth check is in progress
@@ -22,6 +22,10 @@ export default function ProtectedRoute({ children }) {
 
     if (!isAuthenticated) {
         return <Navigate to="/login" state={{ from: location.pathname }} replace />;
+    }
+
+    if (isAdmin && user?.role !== "admin") {
+        return <Navigate to="/" replace />;
     }
 
     return children;

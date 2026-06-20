@@ -10,6 +10,7 @@ import errorMiddleware from "./middlewares/error.js"
 import authRoutes from "./routes/auth.route.js"
 import adminRoutes from "./routes/admin.route.js"
 import orderRoutes from "./routes/order.route.js"
+import paymentRoutes from "./routes/payment.route.js"
 
 // init
 const app = express();
