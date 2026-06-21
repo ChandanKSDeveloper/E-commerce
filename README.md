@@ -212,4 +212,18 @@ VITE_API_PROXY_TARGET=http://localhost:4000
 
 ## License
 
+## Screenshots
+
+![Screenshot 1](screenshots/Screenshot%20(235).png)
+![Screenshot 2](screenshots/Screenshot%20(236).png)
+![Screenshot 3](screenshots/Screenshot%20(237).png)
+![Screenshot 4](screenshots/Screenshot%20(238).png)
+![Screenshot 5](screenshots/Screenshot%20(239).png)
+![Screenshot 6](screenshots/Screenshot%20(240).png)
+![Screenshot 7](screenshots/Screenshot%20(241).png)
+![Screenshot 8](screenshots/Screenshot%20(242).png)
+![Screenshot 9](screenshots/Screenshot%20(243).png)
+![Screenshot 10](screenshots/Screenshot%20(244).png)
+![Screenshot 11](screenshots/Screenshot%20(245).png)
+
 MIT — © Chandan Kumar Singh
