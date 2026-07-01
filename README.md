@@ -1,12 +1,12 @@
 # E-commerce
 
-A full-stack MERN e-commerce platform with user authentication, product catalog, shopping cart, Stripe payment processing, order management, reviews, and an admin dashboard.
+A full-stack MERN e-commerce platform with user authentication, product catalog, shopping cart, Stripe payment processing mock, order management, reviews, and an admin dashboard.
 
 ## Tech Stack
 
 **Backend:** Node.js, Express 5, MongoDB (Mongoose ODM), JWT, Bcryptjs, Stripe, Cloudinary, Nodemailer, Multer
 
-**Frontend:** React 19, Vite 8, React Router DOM 7, Tailwind CSS 4, shadcn/ui, Zustand, Axios, Stripe Elements, React Hook Form, TanStack React Query, Sonner
+**Frontend:** React 19, Vite 8, React Router DOM 7, Tailwind CSS 4, shadcn/ui, Zustand, Axios, Stripe Elements, React Hook Form, Sonner
 
 ## Features
 
@@ -214,16 +214,14 @@ VITE_API_PROXY_TARGET=http://localhost:4000
 
 ## Screenshots
 
-![Screenshot 1](screenshots/Screenshot%20(235).png)
-![Screenshot 2](screenshots/Screenshot%20(236).png)
-![Screenshot 3](screenshots/Screenshot%20(237).png)
-![Screenshot 4](screenshots/Screenshot%20(238).png)
-![Screenshot 5](screenshots/Screenshot%20(239).png)
-![Screenshot 6](screenshots/Screenshot%20(240).png)
-![Screenshot 7](screenshots/Screenshot%20(241).png)
-![Screenshot 8](screenshots/Screenshot%20(242).png)
-![Screenshot 9](screenshots/Screenshot%20(243).png)
-![Screenshot 10](screenshots/Screenshot%20(244).png)
-![Screenshot 11](screenshots/Screenshot%20(245).png)
+![Screenshot 1](screenshots/homePage.png)
+![Screenshot 2](screenshots/loginPage.png)
+![Screenshot 3](screenshots/product.png)
+![Screenshot 4](screenshots/checkout.png)
+![Screenshot 5](screenshots/orderProcessing.png)
+![Screenshot 6](screenshots/payment.png)
+![Screenshot 7](screenshots/myOrders.png)
+![Screenshot 8](screenshots/placedOrder.png)
+![Screenshot 9](screenshots/admindashboard.png)
 
 MIT — © Chandan Kumar Singh
